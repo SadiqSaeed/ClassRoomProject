@@ -26,7 +26,9 @@ public class SignUpResource {
     @Produces(MediaType.TEXT_PLAIN)
     public Response addUser(@PathParam("userName") String userName, @PathParam("email") String email,
                             @PathParam("password") String password) {
-        return Response.status(200).entity("Message: " + signUpInterface.createUser(userName.toLowerCase(), email.toLowerCase(), password)).build();
+        return Response.status(200)
+                .entity("Message: " + signUpInterface.createUser(userName, email.toLowerCase(), password))
+                .build();
     }
 
     @GET
@@ -40,7 +42,18 @@ public class SignUpResource {
     @Produces(MediaType.TEXT_PLAIN)
     public Response updateUser(@PathParam("id") String id, @PathParam("userName") String userName,
                                @PathParam("password") String password) {
-        return Response.status(200).entity("Message: " + signUpInterface.updateUserData(id, userName, password)).build();
+        return Response.status(200)
+                .entity("Message: " + signUpInterface.updateUserData(id, userName, password))
+                .build();
+    }
+
+    @PUT
+    @Path("/{id}")
+    @Produces(MediaType.TEXT_PLAIN)
+    public Response updateStatus(@PathParam("id") String id) {
+        return Response.status(200)
+                .entity("Message: " + signUpInterface.updateStatus(id))
+                .build();
     }
 
 

@@ -22,7 +22,7 @@ public class DBConnection {
     public Connection openConnection() {
         userName = "root";
         password = "ninja789";
-        url = "jdbc:mysql://localhost/test?autoReconnect=true&useSSL=false";
+        url = "jdbc:mysql://localhost/classroomapp?autoReconnect=true&useSSL=false";
         try {
             con = DriverManager.getConnection(url, userName, password);
         } catch (SQLException e) {

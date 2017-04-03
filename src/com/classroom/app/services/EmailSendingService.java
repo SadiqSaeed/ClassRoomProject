@@ -19,7 +19,7 @@ public class EmailSendingService {
     private String text = null;
     private String message = null;
 
-    public String sendMail(String email, String userName) {
+    public String sendMail(String id, String email, String userName) {
 
         to = email;
         from = "classroomapp2017@gmail.com";
@@ -27,7 +27,8 @@ public class EmailSendingService {
         host = "smtp.gmail.com";
         subject = "Account Verification mail";
         text = "Dear '" + userName + "' \n \n \n To complete your registration \n with ClassRoom please click the" +
-                "\n link below to verify your email \n address \n \n \n If you didn't sign up; please \n" +
+                "\n link below to verify your email \n address \n \n \n http://localhost:8082/ClassRoomApp/webapi/SignUp/" + id + " " +
+                "\n \n \n If you didn't sign up; please \n" +
                 " ignore this email";
 
         Properties properties = System.getProperties();
