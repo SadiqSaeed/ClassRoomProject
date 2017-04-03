@@ -10,7 +10,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-@XmlRootElement
 public class SignInService implements SignInInterface {
 
     private Connection con = null;
@@ -24,7 +23,7 @@ public class SignInService implements SignInInterface {
             con = dbConnection.openConnection();
             Statement st = con.createStatement();
 
-            String query = "Select * from logging where userName = '" + signIn.getUserName_email() + "' And password = '" + signIn.getPassword() + "'" +
+            String query = "Select * from signUp where userName = '" + signIn.getUserName_email() + "' And password = '" + signIn.getPassword() + "'" +
                     " OR email = '" + signIn.getUserName_email() + "' And password = '" + signIn.getPassword() + "'";
 
             ResultSet rs = st.executeQuery(query);

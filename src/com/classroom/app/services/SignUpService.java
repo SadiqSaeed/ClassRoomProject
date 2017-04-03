@@ -108,7 +108,7 @@ public class SignUpService implements SignUpInterface {
         List<SignUp> userData = new ArrayList<>();
         try {
             con = dbConnection.openConnection();
-            String query = "SELECT id, userName, email, password FROM logging WHERE userName = '" + userName + "'";
+            String query = "SELECT id, userName, email, password FROM signUp WHERE userName = '" + userName + "'";
             Statement statement = con.createStatement();
             ResultSet resultSet = statement.executeQuery(query);
 
