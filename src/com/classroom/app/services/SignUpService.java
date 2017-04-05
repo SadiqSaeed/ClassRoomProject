@@ -169,13 +169,12 @@ public class SignUpService implements SignUpInterface {
             con = dbConnection.openConnection();
             Statement statement = con.createStatement();
 
-            String query = "Update signin_up set status = '" + signIn.getStatus() + "' where id = '" + id + "'";
-
             signIn.setStatus(checkStatus(id));
             System.out.println(signIn.getStatus());
 
             if (signIn.getStatus() == 0) {
                 signIn.setStatus(1);
+                String query = "Update signin_up set status = '" + signIn.getStatus() + "' where id = '" + id + "'";
                 statement.execute(query);
                 Message = "Account Activated Successfully!!!! ";
             } else if (signIn.getStatus() == 1) {

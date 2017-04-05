@@ -47,10 +47,9 @@ public class SignUpResource {
                 .build();
     }
 
-    @PUT
-    @Path("/{id}")
+    @GET
     @Produces(MediaType.TEXT_PLAIN)
-    public Response updateStatus(@PathParam("id") String id) {
+    public Response updateStatus(@QueryParam("id") String id) {
         return Response.status(200)
                 .entity("Message: " + signUpInterface.updateStatus(id))
                 .build();
