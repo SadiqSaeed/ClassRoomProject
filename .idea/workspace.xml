@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5d8b2a6-82b4-48b3-9bff-944306ff9e6f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ClassRoomApp/WEB-INF/classes/com/classroom/app/services/EmailSendingService.class" afterPath="$PROJECT_DIR$/out/artifacts/ClassRoomApp/WEB-INF/classes/com/classroom/app/services/EmailSendingService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ClassRoomApp/WEB-INF/classes/com/classroom/app/services/SignUpService.class" afterPath="$PROJECT_DIR$/out/artifacts/ClassRoomApp/WEB-INF/classes/com/classroom/app/services/SignUpService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ClassRoomApp/WEB-INF/classes/com/classroom/app/webservices/SignUpResource.class" afterPath="$PROJECT_DIR$/out/artifacts/ClassRoomApp/WEB-INF/classes/com/classroom/app/webservices/SignUpResource.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ClassRoomApp/com/classroom/app/services/EmailSendingService.class" afterPath="$PROJECT_DIR$/out/production/ClassRoomApp/com/classroom/app/services/EmailSendingService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ClassRoomApp/com/classroom/app/services/SignUpService.class" afterPath="$PROJECT_DIR$/out/production/ClassRoomApp/com/classroom/app/services/SignUpService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ClassRoomApp/com/classroom/app/webservices/SignUpResource.class" afterPath="$PROJECT_DIR$/out/production/ClassRoomApp/com/classroom/app/webservices/SignUpResource.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/classroom/app/services/EmailSendingService.java" afterPath="$PROJECT_DIR$/src/com/classroom/app/services/EmailSendingService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/classroom/app/services/SignUpService.java" afterPath="$PROJECT_DIR$/src/com/classroom/app/services/SignUpService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/classroom/app/webservices/SignUpResource.java" afterPath="$PROJECT_DIR$/src/com/classroom/app/webservices/SignUpResource.java" />
-    </list>
+    <list default="true" id="b5d8b2a6-82b4-48b3-9bff-944306ff9e6f" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -125,8 +114,8 @@
       <file leaf-file-name="SignUpResource.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/classroom/app/webservices/SignUpResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="51" column="20" lean-forward="false" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="8" />
+            <state relative-caret-position="396">
+              <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -208,7 +197,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -333,7 +322,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -849,12 +838,12 @@
       <workItem from="1491236193225" duration="9954000" />
       <workItem from="1491324393773" duration="1417000" />
       <workItem from="1491326805654" duration="16000" />
-      <workItem from="1491398467023" duration="1573000" />
+      <workItem from="1491398467023" duration="3068000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36195000" />
+    <option name="totallyTimeSpent" value="37690000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1618" height="868" extended-state="7" />
@@ -1249,8 +1238,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/classroom/app/webservices/SignUpResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="51" column="20" lean-forward="false" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="8" />
+        <state relative-caret-position="396">
+          <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
           <folding />
         </state>
       </provider>
