@@ -14,19 +14,22 @@ public class SignInService implements SignInInterface {
 
     private Connection con = null;
     private String Message = "";
+    private SignIn signIn;
+    private DBConnection dbConnection;
+    private Statement statement;
 
     @Override
     public String authenticateUser(String userName_email, String password) {
-        DBConnection dbConnection = new DBConnection();
-        SignIn signIn = new SignIn(userName_email, password);
+        dbConnection = new DBConnection();
+        signIn = new SignIn(userName_email, password);
         try {
             con = dbConnection.openConnection();
-            Statement st = con.createStatement();
+            statement = con.createStatement();
 
             String query = "Select * from signin_up where userName = '" + signIn.getUserName_email() + "' And password = '" + signIn.getPassword() + "'" +
                     " OR email = '" + signIn.getUserName_email() + "' And password = '" + signIn.getPassword() + "'";
 
-            ResultSet rs = st.executeQuery(query);
+            ResultSet rs = statement.executeQuery(query);
 
             if (rs.next()) {
                 signIn.setStatus(rs.getInt("status"));
@@ -43,7 +46,12 @@ public class SignInService implements SignInInterface {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            dbConnection.closeConnection(con);
+            try {
+                statement.close();
+                dbConnection.closeConnection(con);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
 
         return Message;
