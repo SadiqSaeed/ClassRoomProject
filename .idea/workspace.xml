@@ -4,6 +4,7 @@
     <list default="true" id="b5d8b2a6-82b4-48b3-9bff-944306ff9e6f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/classroom/app/services/SignInService.java" afterPath="$PROJECT_DIR$/src/com/classroom/app/services/SignInService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/classroom/app/services/SignUpService.java" afterPath="$PROJECT_DIR$/src/com/classroom/app/services/SignUpService.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,10 +31,10 @@
       <file leaf-file-name="SignInService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/classroom/app/services/SignInService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+            <state relative-caret-position="22">
+              <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
               <folding>
-                <marker date="1491478387245" expanded="true" signature="893:1135" ph="Select * fro... logging" />
+                <marker date="1491538107463" expanded="true" signature="844:1086" ph="Select * fro... logging" />
               </folding>
             </state>
           </provider>
@@ -42,17 +43,27 @@
       <file leaf-file-name="SignUpService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/classroom/app/services/SignUpService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+            <state relative-caret-position="4070">
+              <caret line="195" column="0" lean-forward="false" selection-start-line="195" selection-start-column="0" selection-end-line="195" selection-end-column="0" />
               <folding>
-                <marker date="1491326010077" expanded="true" signature="1216:1446" ph="Insert into logging... " />
-                <marker date="1491326010077" expanded="true" signature="2380:2437" ph="Select email... logging" />
-                <marker date="1491326010077" expanded="true" signature="3076:3142" ph="Select userN... logging" />
-                <marker date="1491326010077" expanded="true" signature="3832:3919" ph="SELECT id, u... signUp" />
-                <marker date="1491326010077" expanded="true" signature="5114:5255" ph="UPDATE loggi... " />
-                <marker date="1491326010077" expanded="true" signature="6144:6226" ph="Update signi... " />
-                <marker date="1491326010077" expanded="true" signature="7022:7073" ph="Select statu... signin_up" />
+                <marker date="1491495265792" expanded="true" signature="1409:1639" ph="Insert into logging... " />
+                <marker date="1491495265792" expanded="true" signature="2594:2651" ph="Select email... logging" />
+                <marker date="1491495265792" expanded="true" signature="3291:3357" ph="Select userN... logging" />
+                <marker date="1491495265792" expanded="true" signature="4035:4122" ph="SELECT id, u... signUp" />
+                <marker date="1491495265792" expanded="true" signature="5293:5434" ph="UPDATE loggi... " />
+                <marker date="1491495265792" expanded="true" signature="6334:6416" ph="Update signi... " />
+                <marker date="1491495265792" expanded="true" signature="7223:7274" ph="Select statu... signin_up" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SignUpResource.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/classroom/app/webservices/SignUpResource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="704">
+              <caret line="39" column="8" lean-forward="false" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -85,9 +96,9 @@
         <option value="$PROJECT_DIR$/src/com/classroom/app/model/SignIn.java" />
         <option value="$PROJECT_DIR$/src/com/classroom/app/Interfaces/SignUpInterface.java" />
         <option value="$PROJECT_DIR$/src/com/classroom/app/database/DBConnection.java" />
-        <option value="$PROJECT_DIR$/src/com/classroom/app/services/SignUpService.java" />
         <option value="$PROJECT_DIR$/src/com/classroom/app/webservices/SignUpResource.java" />
         <option value="$PROJECT_DIR$/src/com/classroom/app/services/EmailSendingService.java" />
+        <option value="$PROJECT_DIR$/src/com/classroom/app/services/SignUpService.java" />
         <option value="$PROJECT_DIR$/src/com/classroom/app/services/SignInService.java" />
       </list>
     </option>
@@ -132,7 +143,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -258,7 +269,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -776,12 +787,15 @@
       <workItem from="1491326805654" duration="16000" />
       <workItem from="1491398467023" duration="3068000" />
       <workItem from="1491463002604" duration="815000" />
-      <workItem from="1491475073243" duration="4821000" />
+      <workItem from="1491475073243" duration="5104000" />
+      <workItem from="1491494578190" duration="1731000" />
+      <workItem from="1491537512541" duration="1131000" />
+      <workItem from="1491581681961" duration="29000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43326000" />
+    <option name="totallyTimeSpent" value="46500000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1618" height="868" extended-state="7" />
@@ -801,13 +815,12 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32859176" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3598862" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3598862" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26036268" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.50497866" order="6" side_tool="true" content_ui="tabs" />
@@ -817,6 +830,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32859176" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1098,7 +1112,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1106,9 +1119,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
           <caret line="24" column="50" lean-forward="false" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1116,9 +1126,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="11" column="45" lean-forward="false" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1126,19 +1133,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
           <caret line="26" column="32" lean-forward="false" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/classroom/app/webservices/SignUpResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1144">
-          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1146,9 +1140,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="35" lean-forward="false" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1156,32 +1147,39 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/classroom/app/webservices/SignUpResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="39" column="8" lean-forward="false" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/classroom/app/services/SignUpService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+        <state relative-caret-position="4070">
+          <caret line="195" column="0" lean-forward="false" selection-start-line="195" selection-start-column="0" selection-end-line="195" selection-end-column="0" />
           <folding>
-            <marker date="1491326010077" expanded="true" signature="1216:1446" ph="Insert into logging... " />
-            <marker date="1491326010077" expanded="true" signature="2380:2437" ph="Select email... logging" />
-            <marker date="1491326010077" expanded="true" signature="3076:3142" ph="Select userN... logging" />
-            <marker date="1491326010077" expanded="true" signature="3832:3919" ph="SELECT id, u... signUp" />
-            <marker date="1491326010077" expanded="true" signature="5114:5255" ph="UPDATE loggi... " />
-            <marker date="1491326010077" expanded="true" signature="6144:6226" ph="Update signi... " />
-            <marker date="1491326010077" expanded="true" signature="7022:7073" ph="Select statu... signin_up" />
+            <marker date="1491495265792" expanded="true" signature="1409:1639" ph="Insert into logging... " />
+            <marker date="1491495265792" expanded="true" signature="2594:2651" ph="Select email... logging" />
+            <marker date="1491495265792" expanded="true" signature="3291:3357" ph="Select userN... logging" />
+            <marker date="1491495265792" expanded="true" signature="4035:4122" ph="SELECT id, u... signUp" />
+            <marker date="1491495265792" expanded="true" signature="5293:5434" ph="UPDATE loggi... " />
+            <marker date="1491495265792" expanded="true" signature="6334:6416" ph="Update signi... " />
+            <marker date="1491495265792" expanded="true" signature="7223:7274" ph="Select statu... signin_up" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/classroom/app/services/SignInService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+        <state relative-caret-position="22">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding>
-            <marker date="1491478387245" expanded="true" signature="893:1135" ph="Select * fro... logging" />
+            <marker date="1491538107463" expanded="true" signature="844:1086" ph="Select * fro... logging" />
           </folding>
         </state>
       </provider>

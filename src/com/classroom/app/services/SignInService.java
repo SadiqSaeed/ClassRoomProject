@@ -4,7 +4,6 @@ import com.classroom.app.Interfaces.SignInInterface;
 import com.classroom.app.database.DBConnection;
 import com.classroom.app.model.SignIn;
 
-import javax.xml.bind.annotation.XmlRootElement;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
