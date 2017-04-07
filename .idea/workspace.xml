@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5d8b2a6-82b4-48b3-9bff-944306ff9e6f" name="Default" comment="" />
+    <list default="true" id="b5d8b2a6-82b4-48b3-9bff-944306ff9e6f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,6 +44,7 @@
             <state relative-caret-position="4070">
               <caret line="195" column="0" lean-forward="false" selection-start-line="195" selection-start-column="0" selection-end-line="195" selection-end-column="0" />
               <folding>
+                <element signature="imports" expanded="false" />
                 <marker date="1491495265792" expanded="true" signature="1409:1639" ph="Insert into logging... " />
                 <marker date="1491495265792" expanded="true" signature="2594:2651" ph="Select email... logging" />
                 <marker date="1491495265792" expanded="true" signature="3291:3357" ph="Select userN... logging" />
@@ -59,7 +62,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="704">
               <caret line="39" column="8" lean-forward="false" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -786,12 +791,12 @@
       <workItem from="1491475073243" duration="5104000" />
       <workItem from="1491494578190" duration="1731000" />
       <workItem from="1491537512541" duration="1131000" />
-      <workItem from="1491581681961" duration="239000" />
+      <workItem from="1491581681961" duration="539000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46710000" />
+    <option name="totallyTimeSpent" value="47010000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1618" height="868" extended-state="6" />
@@ -1150,7 +1155,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="704">
           <caret line="39" column="8" lean-forward="false" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1159,6 +1166,7 @@
         <state relative-caret-position="4070">
           <caret line="195" column="0" lean-forward="false" selection-start-line="195" selection-start-column="0" selection-end-line="195" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="false" />
             <marker date="1491495265792" expanded="true" signature="1409:1639" ph="Insert into logging... " />
             <marker date="1491495265792" expanded="true" signature="2594:2651" ph="Select email... logging" />
             <marker date="1491495265792" expanded="true" signature="3291:3357" ph="Select userN... logging" />
