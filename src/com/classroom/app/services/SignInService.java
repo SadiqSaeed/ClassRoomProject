@@ -18,26 +18,33 @@ public class SignInService implements SignInInterface {
     private Statement statement;
 
     @Override
-    public String authenticateUser(String userName_email, String password) {
+    public String authenticateUser(String email, String password) {
         dbConnection = new DBConnection();
-        signIn = new SignIn(userName_email, password);
+        signIn = new SignIn(email, password);
         try {
             con = dbConnection.openConnection();
             statement = con.createStatement();
 
-            String query = "Select * from signin_up where userName = '" + signIn.getUserName_email() + "' And password = '" + signIn.getPassword() + "'" +
-                    " OR email = '" + signIn.getUserName_email() + "' And password = '" + signIn.getPassword() + "'";
+            String query = "Select email,password,status from signin_up where email = '" + signIn.getEmail() + "' And " +
+                    "password = '" + signIn.getPassword() + "'";
 
             ResultSet rs = statement.executeQuery(query);
 
             if (rs.next()) {
+                signIn.setEmail(rs.getString("email"));
+                signIn.setPassword(rs.getString("password"));
                 signIn.setStatus(rs.getInt("status"));
-                if (signIn.getStatus() == 0) {
-                    Message = "Your registration is not complete yet please check your mail";
-                } else if (signIn.getStatus() == 1) {
-                    Message = "SuccessFull LogIn";
-                } else if (signIn.getStatus() == 2) {
-                    Message = "Account with this email is blocked";
+
+                if (signIn.getEmail().equals(email) && signIn.getPassword().equals(password)) {
+                    if (signIn.getStatus() == 0) {
+                        Message = "Your registration is not complete yet please check your mail";
+                    } else if (signIn.getStatus() == 1) {
+                        Message = "SuccessFull LogIn";
+                    } else if (signIn.getStatus() == 2) {
+                        Message = "Account with this email is blocked";
+                    }
+                } else {
+                    Message = "Invalid email or password";
                 }
             } else {
                 Message = "Invalid email or password";

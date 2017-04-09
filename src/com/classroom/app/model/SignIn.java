@@ -5,7 +5,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 public class SignIn {
 
-    private String userName_email;
+    private String email;
     private String password;
     private int status;
 
@@ -13,17 +13,17 @@ public class SignIn {
 
     }
 
-    public SignIn(String userName_email, String password) {
-        this.userName_email = userName_email;
+    public SignIn(String email, String password) {
+        this.email = email;
         this.password = password;
     }
 
-    public String getUserName_email() {
-        return userName_email;
+    public String getEmail() {
+        return email;
     }
 
-    public void setUserName_email(String userName_email) {
-        this.userName_email = userName_email;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getPassword() {
@@ -44,7 +44,7 @@ public class SignIn {
 
     @Override
     public String toString() {
-        return "SignInInterface [userName_email=" + userName_email + ", password=" + password + ", status=" + status + "]";
+        return "SignInInterface [email=" + email + ", password=" + password + ", status=" + status + "]";
     }
 
 }

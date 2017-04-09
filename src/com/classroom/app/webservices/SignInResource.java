@@ -20,7 +20,7 @@ public class SignInResource {
     @Path("/{userName}/{password}")
     public Response authenticate(@PathParam("userName") String userName, @PathParam("password") String password) {
         return Response.status(200)
-                .entity("Message: " + signIn.authenticateUser(userName, password))
+                .entity(signIn.authenticateUser(userName, password))
                 .build();
     }
 }
