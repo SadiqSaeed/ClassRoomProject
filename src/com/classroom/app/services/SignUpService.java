@@ -21,6 +21,7 @@ public class SignUpService implements SignUpInterface {
     private String Message = null;
     private DBConnection dbConnection;
     private SignUpService signUpService;
+    private EmailSendingService emailSendingService;
     private KeyGenerationService keyGenerationService;
     private Statement statement;
     private ResultSet resultSet;
@@ -34,7 +35,7 @@ public class SignUpService implements SignUpInterface {
         dbConnection = new DBConnection();
         String id = keyGenerationService.generateRandomString(15);
 
-        EmailSendingService emailSendingService = new EmailSendingService();
+        emailSendingService = new EmailSendingService();
 
         SignUp signUp = new SignUp(userName, email, password);
         try {
@@ -42,7 +43,7 @@ public class SignUpService implements SignUpInterface {
 
             statement = con.createStatement();
 
-            query = "Insert into signin_up (id, userName, email, password, status) Values ('" + id + "'," +
+            query = "Insert into users (userId, userName, email, password, status) Values ('" + id + "'," +
                     "'" + signUp.getUserName() + "', '" + signUp.getEmail() + "', '" + signUp.getPassword() + "', '" + signUp.getStatus() + "')";
 
             String checkMessage1 = null;
@@ -74,7 +75,7 @@ public class SignUpService implements SignUpInterface {
         dbConnection = new DBConnection();
         try {
             con = dbConnection.openConnection();
-            query = "Select email from signin_up where email = '" + email + "' ";
+            query = "Select email from users where email = '" + email + "' ";
             statement = con.createStatement();
             resultSet = statement.executeQuery(query);
 
@@ -96,7 +97,7 @@ public class SignUpService implements SignUpInterface {
         dbConnection = new DBConnection();
         try {
             con = dbConnection.openConnection();
-            query = "Select userName from signin_up where userName = '" + userName + "'";
+            query = "Select userName from users where userName = '" + userName + "'";
             statement = con.createStatement();
             resultSet = statement.executeQuery(query);
 
@@ -118,7 +119,7 @@ public class SignUpService implements SignUpInterface {
         userData = new ArrayList<>();
         try {
             con = dbConnection.openConnection();
-            query = "SELECT id, userName, email, password FROM signin_up WHERE userName = '" + userName + "'";
+            query = "SELECT userId, userName, email, password FROM users WHERE userName = '" + userName + "'";
             statement = con.createStatement();
             resultSet = statement.executeQuery(query);
 
@@ -154,7 +155,7 @@ public class SignUpService implements SignUpInterface {
             con = dbConnection.openConnection();
             statement = con.createStatement();
 
-            query = "UPDATE signin_up SET userName = '" + signUp.getUserName() + "', password = '" + signUp.getPassword() + "' WHERE id = '" + signUp.getId() + "'";
+            query = "UPDATE users SET userName = '" + signUp.getUserName() + "', password = '" + signUp.getPassword() + "' WHERE userId = '" + signUp.getId() + "'";
 
             checkMessage = signUpService.checkUserName(userName);
 
@@ -185,7 +186,7 @@ public class SignUpService implements SignUpInterface {
 
             if (signIn.getStatus() == 0) {
                 signIn.setStatus(1);
-                query = "Update signin_up set status = '" + signIn.getStatus() + "' where id = '" + id + "'";
+                query = "Update users set status = '" + signIn.getStatus() + "' where userId = '" + id + "'";
                 statement.execute(query);
                 Message = "Account Activated Successfully!!!! ";
             } else if (signIn.getStatus() == 1) {
@@ -211,7 +212,7 @@ public class SignUpService implements SignUpInterface {
             con = dbConnection.openConnection();
             statement = con.createStatement();
 
-            query = "Select status from signin_up where id= '" + id + "'";
+            query = "Select status from users where userId= '" + id + "'";
 
             resultSet = statement.executeQuery(query);
 

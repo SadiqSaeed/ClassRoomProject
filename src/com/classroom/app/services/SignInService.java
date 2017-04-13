@@ -25,7 +25,7 @@ public class SignInService implements SignInInterface {
             con = dbConnection.openConnection();
             statement = con.createStatement();
 
-            String query = "Select email,password,status from signin_up where email = '" + signIn.getEmail() + "' And " +
+            String query = "Select email,password,status from users where email = '" + signIn.getEmail() + "' And " +
                     "password = '" + signIn.getPassword() + "'";
 
             ResultSet rs = statement.executeQuery(query);
