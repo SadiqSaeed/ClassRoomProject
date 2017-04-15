@@ -7,6 +7,6 @@ import java.sql.Timestamp;
  */
 public interface MessageInterface {
 
-    void sendMessage(String message, Timestamp createdAt, String author, String chatId);
+    void sendMessage(String message, String author, String chatId);
 
 }

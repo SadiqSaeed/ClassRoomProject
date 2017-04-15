@@ -19,6 +19,12 @@ public class ChatRoom {
     public ChatRoom() {
     }
 
+    public ChatRoom(String title, String description, String chatRoomId) {
+        this.title = title;
+        this.description = description;
+        this.chatRoomId = chatRoomId;
+    }
+
     public ChatRoom(String chatRoomId, String title, String description, int groupType, String groupAdmin) {
         this.chatRoomId = chatRoomId;
         this.title = title;

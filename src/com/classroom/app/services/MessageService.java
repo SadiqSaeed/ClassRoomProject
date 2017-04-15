@@ -21,9 +21,9 @@ public class MessageService implements MessageInterface {
     private List<Message> messageList;
 
     @Override
-    public void sendMessage(String message, Timestamp createdAt, String author, String chatId) {
+    public void sendMessage(String message, String author, String chatId) {
         dbConnection = new DBConnection();
-        messageClass = new Message(message, createdAt, author, chatId);
+        messageClass = new Message(message, author, chatId);
         try {
             con = dbConnection.openConnection();
             statement = con.createStatement();

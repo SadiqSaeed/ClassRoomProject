@@ -19,9 +19,8 @@ public class Message {
 
     }
 
-    public Message(String message, Timestamp createdAt, String author, String chatId) {
+    public Message(String message, String author, String chatId) {
         this.message = message;
-        this.createdAt = createdAt;
         this.author = author;
         this.chatId = chatId;
     }
