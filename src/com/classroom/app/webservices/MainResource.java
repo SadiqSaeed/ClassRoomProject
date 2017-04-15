@@ -16,6 +16,7 @@ public class MainResource extends Application {
         set.add(MyResource.class);
         set.add(SignInResource.class);
         set.add(SignUpResource.class);
+        set.add(ChatRoomResource.class);
         return set;
     }
 
