@@ -16,5 +16,5 @@ public interface ChatRoomInterface {
 
     List<ChatRoom> getChatRoomInfo(String chatRoomId);
 
-    List<ChatRoom> getAllChatRooms(String userId);
+    List<ChatRoom> getAllChatRoomsInfoForUser(String userId);
 }

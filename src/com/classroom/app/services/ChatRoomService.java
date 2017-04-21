@@ -137,7 +137,7 @@ public class ChatRoomService implements ChatRoomInterface {
     }
 
     @Override
-    public List<ChatRoom> getAllChatRooms(String userId) {
+    public List<ChatRoom> getAllChatRoomsInfoForUser(String userId) {
         dbConnection = new DBConnection();
 
         return null;
