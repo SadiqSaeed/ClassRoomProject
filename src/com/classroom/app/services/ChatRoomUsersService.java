@@ -4,6 +4,7 @@ import com.classroom.app.Interfaces.ChatRoomUsersInterface;
 import com.classroom.app.database.DBConnection;
 import com.classroom.app.model.ChatRoomUsers;
 
+import javax.xml.soap.SAAJResult;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -51,6 +52,27 @@ public class ChatRoomUsersService implements ChatRoomUsersInterface {
 
     @Override
     public String removeUser(String userId, String chatRoomId) {
-        return null;
+        dbConnection = new DBConnection();
+        chatRoomUsers = new ChatRoomUsers(userId, chatRoomId);
+        try {
+            connection = dbConnection.openConnection();
+            statement = connection.createStatement();
+
+            query = "Delete from chatroomusers where userId = '" + chatRoomUsers.getUserId() + "' And " +
+                    "chatRoomId = '" + chatRoomUsers.getChatRoomId() + "'";
+
+            statement.execute(query);
+            message = "User removed from the group";
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                statement.close();
+                dbConnection.closeConnection(connection);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return message;
     }
 }
