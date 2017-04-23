@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.classroom.app</OriginalElement>
+  <nodes>
+    <node x="677.0" y="1386.0">com.classroom.app.services.EmailSendingService</node>
+    <node x="1086.5" y="813.0">com.classroom.app.Interfaces.ChatRoomUsersInterface</node>
+    <node x="563.0" y="813.0">com.classroom.app.model.SignUp</node>
+    <node x="-414.5" y="-3.0">com.classroom.app.Interfaces.SignUpInterface</node>
+    <node x="1047.0" y="953.0">com.classroom.app.services.ChatRoomUsersService</node>
+    <node x="92.0" y="-3.0">com.classroom.app.model.ChatRoom</node>
+    <node x="982.0" y="1386.0">com.classroom.app.database.DBConnection</node>
+    <node x="751.0" y="-3.0">com.classroom.app.Interfaces.ChatRoomInterface</node>
+    <node x="744.0" y="191.0">com.classroom.app.services.ChatRoomService</node>
+    <node x="-439.0" y="1386.0">com.classroom.app.model.SignIn</node>
+    <node x="389.0" y="1793.0">com.classroom.app.webservices.SignInResource</node>
+    <node x="-439.0" y="1007.0">com.classroom.app.services.MessageService</node>
+    <node x="-31.0" y="1386.0">com.classroom.app.Interfaces.SignInInterface</node>
+    <node x="-8.0" y="1499.0">com.classroom.app.services.SignInService</node>
+    <node x="-439.0" y="272.0">com.classroom.app.services.SignUpService</node>
+    <node x="659.0" y="1793.0">com.classroom.app.services.KeyGenerationService</node>
+    <node x="21.0" y="813.0">com.classroom.app.model.Message</node>
+    <node x="-37.0" y="1793.0">com.classroom.app.webservices.ChatRoomResource</node>
+    <node x="-424.5" y="813.0">com.classroom.app.Interfaces.MessageInterface</node>
+    <node x="326.0" y="1386.0">com.classroom.app.model.ChatRoomUsers</node>
+    <node x="-439.0" y="1793.0">com.classroom.app.webservices.SignUpResource</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.classroom.app.services.ChatRoomUsersService" target="com.classroom.app.Interfaces.ChatRoomUsersInterface">
+      <point x="0.0" y="-126.5" />
+      <point x="0.0" y="45.0" />
+    </edge>
+    <edge source="com.classroom.app.services.SignInService" target="com.classroom.app.Interfaces.SignInInterface">
+      <point x="0.0" y="-99.5" />
+      <point x="0.0" y="31.5" />
+    </edge>
+    <edge source="com.classroom.app.services.SignUpService" target="com.classroom.app.Interfaces.SignUpInterface">
+      <point x="0.0" y="-248.0" />
+      <point x="0.0" y="112.5" />
+    </edge>
+    <edge source="com.classroom.app.services.ChatRoomService" target="com.classroom.app.Interfaces.ChatRoomInterface">
+      <point x="0.0" y="-180.5" />
+      <point x="0.0" y="72.0" />
+    </edge>
+    <edge source="com.classroom.app.services.MessageService" target="com.classroom.app.Interfaces.MessageInterface">
+      <point x="0.0" y="-167.0" />
+      <point x="0.0" y="72.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.8" x="333.0" y="102.75" />
+  <SelectedNodes>
+    <node>com.classroom.app.services.EmailSendingService</node>
+    <node>com.classroom.app.Interfaces.ChatRoomUsersInterface</node>
+    <node>com.classroom.app.model.SignUp</node>
+    <node>com.classroom.app.Interfaces.SignUpInterface</node>
+    <node>com.classroom.app.services.ChatRoomUsersService</node>
+    <node>com.classroom.app.model.ChatRoom</node>
+    <node>com.classroom.app.database.DBConnection</node>
+    <node>com.classroom.app.Interfaces.ChatRoomInterface</node>
+    <node>com.classroom.app.services.ChatRoomService</node>
+    <node>com.classroom.app.model.SignIn</node>
+    <node>com.classroom.app.webservices.SignInResource</node>
+    <node>com.classroom.app.services.MessageService</node>
+    <node>com.classroom.app.Interfaces.SignInInterface</node>
+    <node>com.classroom.app.services.SignInService</node>
+    <node>com.classroom.app.services.SignUpService</node>
+    <node>com.classroom.app.services.KeyGenerationService</node>
+    <node>com.classroom.app.model.Message</node>
+    <node>com.classroom.app.webservices.ChatRoomResource</node>
+    <node>com.classroom.app.Interfaces.MessageInterface</node>
+    <node>com.classroom.app.model.ChatRoomUsers</node>
+    <node>com.classroom.app.webservices.SignUpResource</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

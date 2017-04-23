@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.classroom.app</OriginalElement>
+  <nodes>
+    <node x="481.0" y="0.0">com.classroom.app.services.EmailSendingService</node>
+    <node x="1264.0" y="0.0">com.classroom.app.Interfaces.ChatRoomUsersInterface</node>
+    <node x="167.0" y="0.0">com.classroom.app.model.SignUp</node>
+    <node x="0.0" y="0.0">com.classroom.app.Interfaces.SignUpInterface</node>
+    <node x="1072.7" y="146.0">com.classroom.app.services.ChatRoomUsersService</node>
+    <node x="1677.0" y="0.0">com.classroom.app.model.ChatRoom</node>
+    <node x="1108.0" y="0.0">com.classroom.app.database.DBConnection</node>
+    <node x="1488.0" y="0.0">com.classroom.app.Interfaces.ChatRoomInterface</node>
+    <node x="1603.3333333333333" y="146.0">com.classroom.app.services.ChatRoomService</node>
+    <node x="680.0" y="0.0">com.classroom.app.model.SignIn</node>
+    <node x="1805.6253472222222" y="146.0">com.classroom.app.services.MessageService</node>
+    <node x="766.438888888889" y="232.0">com.classroom.app.webservices.SignInResource</node>
+    <node x="782.0" y="0.0">com.classroom.app.Interfaces.SignInInterface</node>
+    <node x="735.438888888889" y="146.0">com.classroom.app.services.SignInService</node>
+    <node x="402.25" y="146.0">com.classroom.app.services.SignUpService</node>
+    <node x="276.0" y="0.0">com.classroom.app.services.KeyGenerationService</node>
+    <node x="1821.3333333333333" y="0.0">com.classroom.app.model.Message</node>
+    <node x="1526.9791666666667" y="232.0">com.classroom.app.webservices.ChatRoomResource</node>
+    <node x="1940.3333333333333" y="0.0">com.classroom.app.Interfaces.MessageInterface</node>
+    <node x="942.0" y="0.0">com.classroom.app.model.ChatRoomUsers</node>
+    <node x="210.98888888888905" y="232.0">com.classroom.app.webservices.SignUpResource</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.classroom.app.services.SignUpService" target="com.classroom.app.services.KeyGenerationService">
+      <point x="-20.399999999999977" y="-18.0" />
+      <point x="449.85" y="96.0" />
+      <point x="322.25" y="96.0" />
+      <point x="-46.25" y="18.0" />
+    </edge>
+    <edge source="com.classroom.app.services.SignInService" target="com.classroom.app.model.SignIn">
+      <point x="-51.60000000000002" y="-18.0" />
+      <point x="748.338888888889" y="86.0" />
+      <point x="721.0" y="86.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="com.classroom.app.services.ChatRoomUsersService" target="com.classroom.app.model.ChatRoomUsers">
+      <point x="-38.59999999999991" y="-18.0" />
+      <point x="1130.6000000000001" y="76.0" />
+      <point x="1051.5" y="76.0" />
+      <point x="36.5" y="18.0" />
+    </edge>
+    <edge source="com.classroom.app.services.ChatRoomUsersService" target="com.classroom.app.database.DBConnection">
+      <point x="0.0" y="-18.0" />
+      <point x="-6.7999999999999545" y="18.0" />
+    </edge>
+    <edge source="com.classroom.app.services.SignUpService" target="com.classroom.app.model.SignIn">
+      <point x="34.0" y="-18.0" />
+      <point x="504.25" y="86.0" />
+      <point x="693.6666666666667" y="86.0" />
+      <point x="-27.33333333333337" y="18.0" />
+    </edge>
+    <edge source="com.classroom.app.webservices.SignInResource" target="com.classroom.app.Interfaces.SignInInterface">
+      <point x="35.5" y="-18.0" />
+      <point x="872.938888888889" y="207.0" />
+      <point x="889.5" y="207.0" />
+      <point x="889.5" y="86.0" />
+      <point x="887.0" y="86.0" />
+      <point x="35.0" y="18.0" />
+    </edge>
+    <edge source="com.classroom.app.webservices.SignInResource" target="com.classroom.app.services.SignInService">
+      <point x="-35.5" y="-18.0" />
+      <point x="801.938888888889" y="207.0" />
+      <point x="799.938888888889" y="207.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="com.classroom.app.webservices.ChatRoomResource" target="com.classroom.app.Interfaces.ChatRoomInterface">
+      <point x="-42.75" y="-18.0" />
+      <point x="1569.7291666666667" y="207.0" />
+      <point x="1530.25" y="207.0" />
+      <point x="-42.25" y="18.0" />
+    </edge>
+    <edge source="com.classroom.app.services.ChatRoomUsersService" target="com.classroom.app.Interfaces.ChatRoomUsersInterface">
+      <point x="77.20000000000005" y="-18.0" />
+      <point x="1246.4" y="126.0" />
+      <point x="1366.0" y="126.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="com.classroom.app.services.SignInService" target="com.classroom.app.Interfaces.SignInInterface">
+      <point x="0.0" y="-18.0" />
+      <point x="799.938888888889" y="86.0" />
+      <point x="817.0" y="86.0" />
+      <point x="-35.0" y="18.0" />
+    </edge>
+    <edge source="com.classroom.app.webservices.SignUpResource" target="com.classroom.app.Interfaces.SignUpInterface">
+      <point x="-37.25" y="-18.0" />
+      <point x="248.23888888888905" y="207.0" />
+      <point x="36.75" y="207.0" />
+      <point x="-36.75" y="18.0" />
+    </edge>
+    <edge source="com.classroom.app.services.SignUpService" target="com.classroom.app.Interfaces.SignUpInterface">
+      <point x="-61.19999999999993" y="-18.0" />
+      <point x="409.05000000000007" y="126.0" />
+      <point x="110.25" y="126.0" />
+      <point x="36.75" y="18.0" />
+    </edge>
+    <edge source="com.classroom.app.services.SignUpService" target="com.classroom.app.model.SignUp">
+      <point x="-34.0" y="-18.0" />
+      <point x="436.25" y="106.0" />
+      <point x="233.75" y="106.0" />
+      <point x="22.25" y="18.0" />
+    </edge>
+    <edge source="com.classroom.app.services.SignUpService" target="com.classroom.app.database.DBConnection">
+      <point x="47.60000000000002" y="-18.0" />
+      <point x="517.85" y="96.0" />
+      <point x="1114.8" y="96.0" />
+      <point x="-61.200000000000045" y="18.0" />
+    </edge>
+    <edge source="com.classroom.app.services.SignInService" target="com.classroom.app.database.DBConnection">
+      <point x="25.799999999999955" y="-18.0" />
+      <point x="825.7388888888889" y="116.0" />
+      <point x="1142.0" y="116.0" />
+      <point x="-34.0" y="18.0" />
+    </edge>
+    <edge source="com.classroom.app.services.SignUpService" target="com.classroom.app.services.EmailSendingService">
+      <point x="6.800000000000011" y="-18.0" />
+      <point x="477.04999999999995" y="66.0" />
+      <point x="525.75" y="66.0" />
+      <point x="-44.75" y="18.0" />
+    </edge>
+    <edge source="com.classroom.app.services.MessageService" target="com.classroom.app.database.DBConnection">
+      <point x="-60.83333333333326" y="-18.0" />
+      <point x="1817.792013888889" y="86.0" />
+      <point x="1223.6" y="86.0" />
+      <point x="47.59999999999991" y="18.0" />
+    </edge>
+    <edge source="com.classroom.app.webservices.SignUpResource" target="com.classroom.app.services.SignUpService">
+      <point x="37.25" y="-18.0" />
+      <point x="322.73888888888905" y="207.0" />
+      <point x="470.25" y="207.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="com.classroom.app.services.ChatRoomService" target="com.classroom.app.database.DBConnection">
+      <point x="-39.5" y="-18.0" />
+      <point x="1642.8333333333333" y="106.0" />
+      <point x="1210.0" y="106.0" />
+      <point x="34.0" y="18.0" />
+    </edge>
+    <edge source="com.classroom.app.webservices.ChatRoomResource" target="com.classroom.app.services.ChatRoomService">
+      <point x="42.75" y="-18.0" />
+      <point x="1655.2291666666667" y="207.0" />
+      <point x="1682.3333333333333" y="207.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="com.classroom.app.services.ChatRoomService" target="com.classroom.app.Interfaces.ChatRoomInterface">
+      <point x="-13.166666666666742" y="-18.0" />
+      <point x="1669.1666666666665" y="96.0" />
+      <point x="1614.75" y="96.0" />
+      <point x="42.25" y="18.0" />
+    </edge>
+    <edge source="com.classroom.app.services.MessageService" target="com.classroom.app.model.Message">
+      <point x="36.5" y="-18.0" />
+      <point x="1915.1253472222222" y="126.0" />
+      <point x="1903.8333333333333" y="126.0" />
+      <point x="33.0" y="18.0" />
+    </edge>
+    <edge source="com.classroom.app.services.ChatRoomService" target="com.classroom.app.model.ChatRoom">
+      <point x="65.83333333333326" y="-18.0" />
+      <point x="1748.1666666666665" y="126.0" />
+      <point x="1769.5" y="126.0" />
+      <point x="37.0" y="18.0" />
+    </edge>
+    <edge source="com.classroom.app.services.MessageService" target="com.classroom.app.Interfaces.MessageInterface">
+      <point x="60.83333333333326" y="-18.0" />
+      <point x="1939.4586805555555" y="126.0" />
+      <point x="2018.8333333333333" y="126.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.3000000000000003" x="357.8461538461537" y="141.38461538461533" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
