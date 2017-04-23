@@ -63,7 +63,7 @@ public class ChatRoomService implements ChatRoomInterface {
     }
 
     @Override
-    public String updateSession(String title, String description, String chatRoomId) {
+    public String updateSessionInfo(String title, String description, String chatRoomId) {
         dbConnection = new DBConnection();
         chatRoom = new ChatRoom(title, description, chatRoomId);
         try {
@@ -139,6 +139,7 @@ public class ChatRoomService implements ChatRoomInterface {
     @Override
     public List<ChatRoom> getAllChatRoomsInfoForUser(String userId) {
         dbConnection = new DBConnection();
+        
 
         return null;
     }

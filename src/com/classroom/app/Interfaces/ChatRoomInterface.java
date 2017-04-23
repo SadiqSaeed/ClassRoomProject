@@ -12,7 +12,7 @@ public interface ChatRoomInterface {
 
     String createSession(String title, String description, int groupType, String groupAdmin);
 
-    String updateSession(String title, String description, String chatRoomId);
+    String updateSessionInfo(String title, String description, String chatRoomId);
 
     List<ChatRoom> getChatRoomInfo(String chatRoomId);
 
