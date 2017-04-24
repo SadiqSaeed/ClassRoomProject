@@ -58,7 +58,7 @@ public class SignUpService implements SignUpInterface {
                 Message = checkMessage2;
             } else {
                 statement.execute(query);
-                Message = "Account created Successfully " + emailSendingService.sendMail(id, email, userName);
+                Message = "Account created Successfully "; //+ emailSendingService.sendMail(id, email, userName);
             }
         } catch (SQLException ex) {
             ex.printStackTrace();

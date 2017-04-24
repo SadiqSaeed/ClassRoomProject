@@ -20,14 +20,18 @@ import java.util.List;
 public class SignUpResource {
 
     SignUpInterface signUpInterface = new SignUpService();
+    SignUp signUp = new SignUp();
 
     @POST
     @Path("/{userName}/{email}/{password}")
     @Produces(MediaType.TEXT_PLAIN)
     public Response addUser(@PathParam("userName") String userName, @PathParam("email") String email,
                             @PathParam("password") String password) {
+        signUp.setUserName(userName);
+        signUp.setEmail(email);
+        signUp.setPassword(password);
         return Response.status(200)
-                .entity("Message: " + signUpInterface.createUser(userName, email.toLowerCase(), password))
+                .entity("Message: " + signUpInterface.createUser(signUp.getUserName(), signUp.getEmail().toLowerCase(), signUp.getPassword()))
                 .build();
     }
 

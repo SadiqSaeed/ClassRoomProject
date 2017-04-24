@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5d8b2a6-82b4-48b3-9bff-944306ff9e6f" name="Default" comment="" />
+    <list default="true" id="b5d8b2a6-82b4-48b3-9bff-944306ff9e6f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/classroom/app/services/SignUpService.java" afterPath="$PROJECT_DIR$/src/com/classroom/app/services/SignUpService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/classroom/app/webservices/SignUpResource.java" afterPath="$PROJECT_DIR$/src/com/classroom/app/webservices/SignUpResource.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -51,14 +55,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SignUpResource.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SignUpResource.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/classroom/app/webservices/SignUpResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="39" column="8" lean-forward="false" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="19" column="29" lean-forward="true" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -66,435 +68,17 @@
       <file leaf-file-name="SignUpService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/classroom/app/services/SignUpService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="60" column="64" lean-forward="false" selection-start-line="60" selection-start-column="64" selection-end-line="60" selection-end-column="64" />
+            <state relative-caret-position="136">
+              <caret line="60" column="113" lean-forward="true" selection-start-line="60" selection-start-column="113" selection-end-line="60" selection-end-column="113" />
               <folding>
-                <marker date="1493014747812" expanded="true" signature="1463:1693" ph="Insert into logging... " />
-                <marker date="1493014747812" expanded="true" signature="2807:2860" ph="Select email... logging" />
-                <marker date="1493014747812" expanded="true" signature="3770:3832" ph="Select userN... logging" />
-                <marker date="1493014747812" expanded="true" signature="4780:4867" ph="SELECT id, u... signUp" />
-                <marker date="1493014747812" expanded="true" signature="6252:6393" ph="UPDATE loggi... " />
-                <marker date="1493014747812" expanded="true" signature="7496:7578" ph="Update signi... " />
-                <marker date="1493014747812" expanded="true" signature="8588:8639" ph="Select statu... signin_up" />
+                <marker date="1493029785994" expanded="true" signature="1463:1693" ph="Insert into logging... " />
+                <marker date="1493029785994" expanded="true" signature="2810:2863" ph="Select email... logging" />
+                <marker date="1493029785994" expanded="true" signature="3773:3835" ph="Select userN... logging" />
+                <marker date="1493029785994" expanded="true" signature="4783:4870" ph="SELECT id, u... signUp" />
+                <marker date="1493029785994" expanded="true" signature="6255:6396" ph="UPDATE loggi... " />
+                <marker date="1493029785994" expanded="true" signature="7499:7581" ph="Update signi... " />
+                <marker date="1493029785994" expanded="true" signature="8591:8642" ph="Select statu... signin_up" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractClassDigram.uml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AbstractClassDigram.uml">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement>com.classroom.app</OriginalElement>
-              <nodes>
-                <node x="454.0769230769231" y="-4.615384615384642">com.classroom.app.services.EmailSendingService</node>
-                <node x="1548.576923076923" y="-4.615384615384642">com.classroom.app.Interfaces.ChatRoomUsersInterface</node>
-                <node x="345.0769230769231" y="-4.615384615384642">com.classroom.app.model.SignUp</node>
-                <node x="-26.923076923076906" y="-4.615384615384642">com.classroom.app.Interfaces.SignUpInterface</node>
-                <node x="1346.848798076923" y="161.38461538461536">com.classroom.app.services.ChatRoomUsersService</node>
-                <node x="1772.576923076923" y="-4.615384615384642">com.classroom.app.model.ChatRoom</node>
-                <node x="1051.076923076923" y="-4.615384615384642">com.classroom.app.database.DBConnection</node>
-                <node x="1903.576923076923" y="-4.615384615384642">com.classroom.app.Interfaces.ChatRoomInterface</node>
-                <node x="949.0769230769231" y="-4.615384615384642">com.classroom.app.model.SignIn</node>
-                <node x="1730.576923076923" y="161.38461538461536">com.classroom.app.services.ChatRoomService</node>
-                <node x="1207.076923076923" y="-4.615384615384642">com.classroom.app.Interfaces.SignInInterface</node>
-                <node x="1137.6373397435898" y="247.38461538461536">com.classroom.app.webservices.SignInResource</node>
-                <node x="1020.3911591880344" y="161.38461538461536">com.classroom.app.services.SignInService</node>
-                <node x="718.7297008547009" y="161.38461538461536">com.classroom.app.services.MessageService</node>
-                <node x="387.3269230769231" y="161.38461538461536">com.classroom.app.services.SignUpService</node>
-                <node x="140.0769230769231" y="-4.615384615384642">com.classroom.app.services.KeyGenerationService</node>
-                <node x="653.0769230769231" y="-4.615384615384642">com.classroom.app.model.Message</node>
-                <node x="1832.354700854701" y="247.38461538461536">com.classroom.app.webservices.ChatRoomResource</node>
-                <node x="772.0769230769231" y="-4.615384615384642">com.classroom.app.Interfaces.MessageInterface</node>
-                <node x="1382.576923076923" y="-4.615384615384642">com.classroom.app.model.ChatRoomUsers</node>
-                <node x="182.95261752136753" y="247.38461538461536">com.classroom.app.webservices.SignUpResource</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="com.classroom.app.services.SignInService" target="com.classroom.app.model.SignIn">
-                  <point x="-25.799999999999955" y="-18.0" />
-                  <point x="1059.0911591880342" y="71.38461538461536" />
-                  <point x="1017.4102564102564" y="71.38461538461536" />
-                  <point x="27.33333333333337" y="18.0" />
-                </edge>
-                <edge source="com.classroom.app.services.ChatRoomUsersService" target="com.classroom.app.database.DBConnection">
-                  <point x="-38.59999999999991" y="-18.0" />
-                  <point x="1404.748798076923" y="121.38461538461536" />
-                  <point x="1153.076923076923" y="121.38461538461536" />
-                  <point x="34.0" y="18.0" />
-                </edge>
-                <edge source="com.classroom.app.services.ChatRoomUsersService" target="com.classroom.app.model.ChatRoomUsers">
-                  <point x="0.0" y="-18.0" />
-                  <point x="1443.348798076923" y="141.38461538461536" />
-                  <point x="1419.076923076923" y="141.38461538461536" />
-                  <point x="-36.5" y="18.0" />
-                </edge>
-                <edge source="com.classroom.app.services.SignUpService" target="com.classroom.app.model.SignIn">
-                  <point x="34.0" y="-18.0" />
-                  <point x="489.3269230769231" y="81.38461538461536" />
-                  <point x="962.7435897435896" y="81.38461538461536" />
-                  <point x="-27.33333333333337" y="18.0" />
-                </edge>
-                <edge source="com.classroom.app.webservices.SignInResource" target="com.classroom.app.services.SignInService">
-                  <point x="-35.5" y="-18.0" />
-                  <point x="1173.1373397435898" y="222.38461538461536" />
-                  <point x="1084.8911591880344" y="222.38461538461536" />
-                  <point x="0.0" y="18.0" />
-                </edge>
-                <edge source="com.classroom.app.webservices.SignInResource" target="com.classroom.app.Interfaces.SignInInterface">
-                  <point x="35.5" y="-18.0" />
-                  <point x="1244.1373397435898" y="222.38461538461536" />
-                  <point x="1312.076923076923" y="222.38461538461536" />
-                  <point x="35.0" y="18.0" />
-                </edge>
-                <edge source="com.classroom.app.webservices.ChatRoomResource" target="com.classroom.app.Interfaces.ChatRoomInterface">
-                  <point x="42.75" y="-18.0" />
-                  <point x="1960.604700854701" y="222.38461538461536" />
-                  <point x="2030.326923076923" y="222.38461538461536" />
-                  <point x="42.25" y="18.0" />
-                </edge>
-                <edge source="com.classroom.app.services.SignInService" target="com.classroom.app.Interfaces.SignInInterface">
-                  <point x="51.60000000000002" y="-18.0" />
-                  <point x="1136.4911591880343" y="141.38461538461536" />
-                  <point x="1242.076923076923" y="141.38461538461536" />
-                  <point x="-35.0" y="18.0" />
-                </edge>
-                <edge source="com.classroom.app.webservices.SignUpResource" target="com.classroom.app.Interfaces.SignUpInterface">
-                  <point x="-37.25" y="-18.0" />
-                  <point x="220.20261752136753" y="222.38461538461536" />
-                  <point x="9.826923076923094" y="222.38461538461536" />
-                  <point x="-36.75" y="18.0" />
-                </edge>
-                <edge source="com.classroom.app.services.SignUpService" target="com.classroom.app.Interfaces.SignUpInterface">
-                  <point x="-61.19999999999993" y="-18.0" />
-                  <point x="394.12692307692316" y="141.38461538461536" />
-                  <point x="83.3269230769231" y="141.38461538461536" />
-                  <point x="36.75" y="18.0" />
-                </edge>
-                <edge source="com.classroom.app.services.SignUpService" target="com.classroom.app.model.SignUp">
-                  <point x="-6.7999999999999545" y="-18.0" />
-                  <point x="448.52692307692314" y="101.38461538461536" />
-                  <point x="411.8269230769231" y="101.38461538461536" />
-                  <point x="22.25" y="18.0" />
-                </edge>
-                <edge source="com.classroom.app.services.SignUpService" target="com.classroom.app.database.DBConnection">
-                  <point x="61.200000000000045" y="-18.0" />
-                  <point x="516.5269230769231" y="101.38461538461536" />
-                  <point x="1071.4769230769232" y="101.38461538461536" />
-                  <point x="-47.59999999999991" y="18.0" />
-                </edge>
-                <edge source="com.classroom.app.services.SignUpService" target="com.classroom.app.services.EmailSendingService">
-                  <point x="20.399999999999977" y="-18.0" />
-                  <point x="475.7269230769231" y="71.38461538461536" />
-                  <point x="588.3269230769231" y="71.38461538461536" />
-                  <point x="44.75" y="18.0" />
-                </edge>
-                <edge source="com.classroom.app.services.MessageService" target="com.classroom.app.database.DBConnection">
-                  <point x="60.83333333333326" y="-18.0" />
-                  <point x="852.5630341880342" y="121.38461538461536" />
-                  <point x="1098.676923076923" y="121.38461538461536" />
-                  <point x="-20.40000000000009" y="18.0" />
-                </edge>
-                <edge source="com.classroom.app.services.ChatRoomService" target="com.classroom.app.database.DBConnection">
-                  <point x="-65.83333333333326" y="-18.0" />
-                  <point x="1743.7435897435898" y="111.38461538461536" />
-                  <point x="1166.676923076923" y="111.38461538461536" />
-                  <point x="47.59999999999991" y="18.0" />
-                </edge>
-                <edge source="com.classroom.app.webservices.ChatRoomResource" target="com.classroom.app.services.ChatRoomService">
-                  <point x="-42.75" y="-18.0" />
-                  <point x="1875.104700854701" y="222.38461538461536" />
-                  <point x="1809.576923076923" y="222.38461538461536" />
-                  <point x="0.0" y="18.0" />
-                </edge>
-                <edge source="com.classroom.app.services.MessageService" target="com.classroom.app.Interfaces.MessageInterface">
-                  <point x="12.166666666666742" y="-18.0" />
-                  <point x="803.8963675213677" y="71.38461538461536" />
-                  <point x="850.5769230769231" y="71.38461538461536" />
-                  <point x="0.0" y="18.0" />
-                </edge>
-                <edge source="com.classroom.app.services.SignUpService" target="com.classroom.app.services.KeyGenerationService">
-                  <point x="-34.0" y="-18.0" />
-                  <point x="421.3269230769231" y="121.38461538461536" />
-                  <point x="278.8269230769231" y="121.38461538461536" />
-                  <point x="46.25" y="18.0" />
-                </edge>
-                <edge source="com.classroom.app.services.ChatRoomUsersService" target="com.classroom.app.Interfaces.ChatRoomUsersInterface">
-                  <point x="77.20000000000005" y="-18.0" />
-                  <point x="1520.5487980769233" y="141.38461538461536" />
-                  <point x="1650.576923076923" y="141.38461538461536" />
-                  <point x="0.0" y="18.0" />
-                </edge>
-                <edge source="com.classroom.app.services.SignInService" target="com.classroom.app.database.DBConnection">
-                  <point x="25.799999999999955" y="-18.0" />
-                  <point x="1110.6911591880341" y="141.38461538461536" />
-                  <point x="1125.876923076923" y="141.38461538461536" />
-                  <point x="6.7999999999999545" y="18.0" />
-                </edge>
-                <edge source="com.classroom.app.webservices.SignUpResource" target="com.classroom.app.services.SignUpService">
-                  <point x="37.25" y="-18.0" />
-                  <point x="294.70261752136753" y="222.38461538461536" />
-                  <point x="455.3269230769231" y="222.38461538461536" />
-                  <point x="0.0" y="18.0" />
-                </edge>
-                <edge source="com.classroom.app.services.MessageService" target="com.classroom.app.model.Message">
-                  <point x="-60.83333333333326" y="-18.0" />
-                  <point x="730.8963675213677" y="71.38461538461536" />
-                  <point x="669.5769230769231" y="71.38461538461536" />
-                  <point x="-33.0" y="18.0" />
-                </edge>
-                <edge source="com.classroom.app.services.ChatRoomService" target="com.classroom.app.Interfaces.ChatRoomInterface">
-                  <point x="65.83333333333326" y="-18.0" />
-                  <point x="1875.4102564102564" y="141.38461538461536" />
-                  <point x="1945.826923076923" y="141.38461538461536" />
-                  <point x="-42.25" y="18.0" />
-                </edge>
-                <edge source="com.classroom.app.services.ChatRoomService" target="com.classroom.app.model.ChatRoom">
-                  <point x="39.5" y="-18.0" />
-                  <point x="1849.076923076923" y="141.38461538461536" />
-                  <point x="1865.076923076923" y="141.38461538461536" />
-                  <point x="37.0" y="18.0" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="1.3000000000000003" x="1084.6153846153845" y="80.23076923076925" />
-              <SelectedNodes>
-                <node>com.classroom.app.services.EmailSendingService</node>
-                <node>com.classroom.app.Interfaces.ChatRoomUsersInterface</node>
-                <node>com.classroom.app.model.SignUp</node>
-                <node>com.classroom.app.Interfaces.SignUpInterface</node>
-                <node>com.classroom.app.services.ChatRoomUsersService</node>
-                <node>com.classroom.app.model.ChatRoom</node>
-                <node>com.classroom.app.database.DBConnection</node>
-                <node>com.classroom.app.Interfaces.ChatRoomInterface</node>
-                <node>com.classroom.app.model.SignIn</node>
-                <node>com.classroom.app.services.ChatRoomService</node>
-                <node>com.classroom.app.Interfaces.SignInInterface</node>
-                <node>com.classroom.app.webservices.SignInResource</node>
-                <node>com.classroom.app.services.SignInService</node>
-                <node>com.classroom.app.services.MessageService</node>
-                <node>com.classroom.app.services.SignUpService</node>
-                <node>com.classroom.app.services.KeyGenerationService</node>
-                <node>com.classroom.app.model.Message</node>
-                <node>com.classroom.app.webservices.ChatRoomResource</node>
-                <node>com.classroom.app.Interfaces.MessageInterface</node>
-                <node>com.classroom.app.model.ChatRoomUsers</node>
-                <node>com.classroom.app.webservices.SignUpResource</node>
-              </SelectedNodes>
-              <Categories />
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClassDigram.uml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ClassDigram.uml">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement>com.classroom.app</OriginalElement>
-              <nodes>
-                <node x="1131.0" y="189.5">com.classroom.app.services.EmailSendingService</node>
-                <node x="3674.5" y="271.0">com.classroom.app.Interfaces.ChatRoomUsersInterface</node>
-                <node x="672.0" y="67.5">com.classroom.app.model.SignUp</node>
-                <node x="0.0" y="203.5">com.classroom.app.Interfaces.SignUpInterface</node>
-                <node x="3307.5690972222224" y="883.5">com.classroom.app.services.ChatRoomUsersService</node>
-                <node x="3970.5" y="0.0">com.classroom.app.model.ChatRoom</node>
-                <node x="2717.0" y="216.5">com.classroom.app.database.DBConnection</node>
-                <node x="4597.5" y="244.0">com.classroom.app.Interfaces.ChatRoomInterface</node>
-                <node x="2334.0" y="135.0">com.classroom.app.model.SignIn</node>
-                <node x="3960.462847222222" y="829.5">com.classroom.app.services.ChatRoomService</node>
-                <node x="3003.0" y="284.5">com.classroom.app.Interfaces.SignInInterface</node>
-                <node x="2918.852083333333" y="1348.5">com.classroom.app.webservices.SignInResource</node>
-                <node x="2637.3628472222226" y="910.5">com.classroom.app.services.SignInService</node>
-                <node x="1760.0854166666668" y="843.0">com.classroom.app.services.MessageService</node>
-                <node x="831.125" y="762.0">com.classroom.app.services.SignUpService</node>
-                <node x="457.0" y="270.5">com.classroom.app.services.KeyGenerationService</node>
-                <node x="1411.0" y="54.0">com.classroom.app.model.Message</node>
-                <node x="4385.281944444445" y="1321.5">com.classroom.app.webservices.ChatRoomResource</node>
-                <node x="1928.0" y="244.0">com.classroom.app.Interfaces.MessageInterface</node>
-                <node x="3348.5" y="175.5">com.classroom.app.model.ChatRoomUsers</node>
-                <node x="473.27986111111113" y="1308.0">com.classroom.app.webservices.SignUpResource</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="com.classroom.app.services.SignUpService" target="com.classroom.app.services.KeyGenerationService">
-                  <point x="-187.25" y="-248.0" />
-                  <point x="911.375" y="732.0" />
-                  <point x="505.75" y="732.0" />
-                  <point x="-48.75" y="45.5" />
-                </edge>
-                <edge source="com.classroom.app.services.SignInService" target="com.classroom.app.model.SignIn">
-                  <point x="-53.19999999999982" y="-99.5" />
-                  <point x="2717.162847222223" y="672.0" />
-                  <point x="2636.5" y="672.0" />
-                  <point x="121.0" y="181.0" />
-                </edge>
-                <edge source="com.classroom.app.services.ChatRoomUsersService" target="com.classroom.app.database.DBConnection">
-                  <point x="-142.0" y="-126.5" />
-                  <point x="3343.0690972222224" y="732.0" />
-                  <point x="2889.9" y="732.0" />
-                  <point x="39.90000000000009" y="99.5" />
-                </edge>
-                <edge source="com.classroom.app.services.ChatRoomUsersService" target="com.classroom.app.model.ChatRoomUsers">
-                  <point x="71.0" y="-126.5" />
-                  <point x="3556.0690972222224" y="742.0" />
-                  <point x="3578.0" y="742.0" />
-                  <point x="76.5" y="140.5" />
-                </edge>
-                <edge source="com.classroom.app.services.SignUpService" target="com.classroom.app.model.SignIn">
-                  <point x="133.75" y="-248.0" />
-                  <point x="1232.375" y="682.0" />
-                  <point x="2394.5" y="682.0" />
-                  <point x="-121.0" y="181.0" />
-                </edge>
-                <edge source="com.classroom.app.webservices.SignInResource" target="com.classroom.app.Interfaces.SignInInterface">
-                  <point x="56.25" y="-45.5" />
-                  <point x="3087.602083333333" y="1283.0" />
-                  <point x="3237.0" y="1283.0" />
-                  <point x="78.0" y="31.5" />
-                </edge>
-                <edge source="com.classroom.app.webservices.SignInResource" target="com.classroom.app.services.SignInService">
-                  <point x="-56.25" y="-45.5" />
-                  <point x="2975.102083333333" y="1283.0" />
-                  <point x="2770.3628472222226" y="1283.0" />
-                  <point x="0.0" y="99.5" />
-                </edge>
-                <edge source="com.classroom.app.webservices.ChatRoomResource" target="com.classroom.app.Interfaces.ChatRoomInterface">
-                  <point x="95.25000000000023" y="-72.5" />
-                  <point x="4671.031944444445" y="1283.0" />
-                  <point x="4913.25" y="1283.0" />
-                  <point x="105.25" y="72.0" />
-                </edge>
-                <edge source="com.classroom.app.services.ChatRoomUsersService" target="com.classroom.app.Interfaces.ChatRoomUsersInterface">
-                  <point x="142.0" y="-126.5" />
-                  <point x="3627.0690972222224" y="742.0" />
-                  <point x="3812.5" y="742.0" />
-                  <point x="0.0" y="45.0" />
-                </edge>
-                <edge source="com.classroom.app.services.SignInService" target="com.classroom.app.Interfaces.SignInInterface">
-                  <point x="106.40000000000009" y="-99.5" />
-                  <point x="2876.7628472222223" y="742.0" />
-                  <point x="3081.0" y="742.0" />
-                  <point x="-78.0" y="31.5" />
-                </edge>
-                <edge source="com.classroom.app.webservices.SignUpResource" target="com.classroom.app.Interfaces.SignUpInterface">
-                  <point x="-89.25" y="-86.0" />
-                  <point x="562.5298611111111" y="1283.0" />
-                  <point x="109.25" y="1283.0" />
-                  <point x="-109.25" y="112.5" />
-                </edge>
-                <edge source="com.classroom.app.services.SignUpService" target="com.classroom.app.Interfaces.SignUpInterface">
-                  <point x="-240.75" y="-248.0" />
-                  <point x="857.875" y="742.0" />
-                  <point x="327.75" y="742.0" />
-                  <point x="109.25" y="112.5" />
-                </edge>
-                <edge source="com.classroom.app.services.SignUpService" target="com.classroom.app.model.SignUp">
-                  <point x="-80.25" y="-248.0" />
-                  <point x="1018.375" y="712.0" />
-                  <point x="781.75" y="712.0" />
-                  <point x="-109.75" y="248.5" />
-                </edge>
-                <edge source="com.classroom.app.services.SignUpService" target="com.classroom.app.database.DBConnection">
-                  <point x="240.75" y="-248.0" />
-                  <point x="1339.375" y="702.0" />
-                  <point x="2756.9" y="702.0" />
-                  <point x="-93.09999999999991" y="99.5" />
-                </edge>
-                <edge source="com.classroom.app.services.SignInService" target="com.classroom.app.database.DBConnection">
-                  <point x="53.19999999999982" y="-99.5" />
-                  <point x="2823.5628472222224" y="742.0" />
-                  <point x="2863.3" y="742.0" />
-                  <point x="13.300000000000182" y="99.5" />
-                </edge>
-                <edge source="com.classroom.app.services.SignUpService" target="com.classroom.app.services.EmailSendingService">
-                  <point x="26.75" y="-248.0" />
-                  <point x="1125.375" y="662.0" />
-                  <point x="1196.0" y="662.0" />
-                  <point x="-65.0" y="126.5" />
-                </edge>
-                <edge source="com.classroom.app.services.MessageService" target="com.classroom.app.database.DBConnection">
-                  <point x="172.91666666666652" y="-167.0" />
-                  <point x="2140.5020833333333" y="722.0" />
-                  <point x="2810.1" y="722.0" />
-                  <point x="-39.90000000000009" y="99.5" />
-                </edge>
-                <edge source="com.classroom.app.webservices.SignUpResource" target="com.classroom.app.services.SignUpService">
-                  <point x="89.25" y="-86.0" />
-                  <point x="741.0298611111111" y="1283.0" />
-                  <point x="1098.625" y="1283.0" />
-                  <point x="0.0" y="248.0" />
-                </edge>
-                <edge source="com.classroom.app.services.ChatRoomService" target="com.classroom.app.database.DBConnection">
-                  <point x="-181.25" y="-180.5" />
-                  <point x="3996.712847222222" y="712.0" />
-                  <point x="2943.1" y="712.0" />
-                  <point x="93.09999999999991" y="99.5" />
-                </edge>
-                <edge source="com.classroom.app.webservices.ChatRoomResource" target="com.classroom.app.services.ChatRoomService">
-                  <point x="-95.25" y="-72.5" />
-                  <point x="4480.531944444445" y="1283.0" />
-                  <point x="4177.962847222222" y="1283.0" />
-                  <point x="0.0" y="180.5" />
-                </edge>
-                <edge source="com.classroom.app.services.MessageService" target="com.classroom.app.model.Message">
-                  <point x="-103.75" y="-167.0" />
-                  <point x="1863.8354166666668" y="662.0" />
-                  <point x="1659.5" y="662.0" />
-                  <point x="0.0" y="262.0" />
-                </edge>
-                <edge source="com.classroom.app.services.ChatRoomService" target="com.classroom.app.Interfaces.ChatRoomInterface">
-                  <point x="181.25" y="-180.5" />
-                  <point x="4359.212847222222" y="742.0" />
-                  <point x="4702.75" y="742.0" />
-                  <point x="-105.25" y="72.0" />
-                </edge>
-                <edge source="com.classroom.app.services.ChatRoomService" target="com.classroom.app.model.ChatRoom">
-                  <point x="36.25" y="-180.5" />
-                  <point x="4214.212847222222" y="742.0" />
-                  <point x="4274.0" y="742.0" />
-                  <point x="0.0" y="316.0" />
-                </edge>
-                <edge source="com.classroom.app.services.MessageService" target="com.classroom.app.Interfaces.MessageInterface">
-                  <point x="34.58333333333326" y="-167.0" />
-                  <point x="2002.1687500000003" y="672.0" />
-                  <point x="2121.0" y="672.0" />
-                  <point x="0.0" y="72.0" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="0.9" x="1965.7777777777778" y="461.44444444444446" />
-              <SelectedNodes>
-                <node>com.classroom.app.services.EmailSendingService</node>
-                <node>com.classroom.app.Interfaces.ChatRoomUsersInterface</node>
-                <node>com.classroom.app.model.SignUp</node>
-                <node>com.classroom.app.Interfaces.SignUpInterface</node>
-                <node>com.classroom.app.services.ChatRoomUsersService</node>
-                <node>com.classroom.app.model.ChatRoom</node>
-                <node>com.classroom.app.database.DBConnection</node>
-                <node>com.classroom.app.Interfaces.ChatRoomInterface</node>
-                <node>com.classroom.app.model.SignIn</node>
-                <node>com.classroom.app.services.ChatRoomService</node>
-                <node>com.classroom.app.Interfaces.SignInInterface</node>
-                <node>com.classroom.app.webservices.SignInResource</node>
-                <node>com.classroom.app.services.SignInService</node>
-                <node>com.classroom.app.services.MessageService</node>
-                <node>com.classroom.app.services.SignUpService</node>
-                <node>com.classroom.app.services.KeyGenerationService</node>
-                <node>com.classroom.app.model.Message</node>
-                <node>com.classroom.app.webservices.ChatRoomResource</node>
-                <node>com.classroom.app.Interfaces.MessageInterface</node>
-                <node>com.classroom.app.model.ChatRoomUsers</node>
-                <node>com.classroom.app.webservices.SignUpResource</node>
-              </SelectedNodes>
-              <Categories>
-                <Category>Fields</Category>
-                <Category>Constructors</Category>
-                <Category>Methods</Category>
-              </Categories>
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
             </state>
           </provider>
         </entry>
@@ -502,13 +86,9 @@
       <file leaf-file-name="EmailSendingService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/classroom/app/services/EmailSendingService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="28" column="32" lean-forward="false" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#1577#1786#0" expanded="false" />
-                <element signature="e#1785#1786#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="352">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -538,7 +118,6 @@
         <option value="$PROJECT_DIR$/src/com/classroom/app/model/CustomMessage.java" />
         <option value="$PROJECT_DIR$/src/com/classroom/app/Interfaces/SignUpInterface.java" />
         <option value="$PROJECT_DIR$/src/com/classroom/app/database/DBConnection.java" />
-        <option value="$PROJECT_DIR$/src/com/classroom/app/webservices/SignUpResource.java" />
         <option value="$PROJECT_DIR$/src/com/classroom/app/services/EmailSendingService.java" />
         <option value="$PROJECT_DIR$/src/com/classroom/app/webservices/SignInResource.java" />
         <option value="$PROJECT_DIR$/src/com/classroom/app/Interfaces/SignInInterface.java" />
@@ -556,6 +135,7 @@
         <option value="$PROJECT_DIR$/src/com/classroom/app/services/MessageService.java" />
         <option value="$PROJECT_DIR$/src/com/classroom/app/webservices/ChatRoomResource.java" />
         <option value="$PROJECT_DIR$/src/com/classroom/app/services/SignUpService.java" />
+        <option value="$PROJECT_DIR$/src/com/classroom/app/webservices/SignUpResource.java" />
       </list>
     </option>
   </component>
@@ -1293,15 +873,15 @@
       <workItem from="1492755885499" duration="1912000" />
       <workItem from="1492847323285" duration="1510000" />
       <workItem from="1492938088418" duration="5617000" />
-      <workItem from="1493012517258" duration="3701000" />
+      <workItem from="1493012517258" duration="7106000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99852000" />
+    <option name="totallyTimeSpent" value="103257000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1618" height="868" extended-state="6" />
+    <frame x="-9" y="-9" width="1618" height="868" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1318,7 +898,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32859176" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1337,6 +917,40 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32859176" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32859176" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32966322" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32966322" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.49502134" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32859176" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3806818" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28562176" sideWeight="0.49502134" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2642487" sideWeight="0.50497866" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32859176" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -1345,7 +959,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1671,7 +1287,7 @@
         <state relative-caret-position="1544">
           <caret line="75" column="22" lean-forward="false" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <marker date="1492695921837" expanded="true" signature="979:1134" ph="Insert into chatroomusers... " />
             <marker date="1492695921837" expanded="true" signature="1867:2025" ph="Delete from " />
           </folding>
@@ -1691,7 +1307,7 @@
         <state relative-caret-position="308">
           <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="17" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1916,249 +1532,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/classroom/app/webservices/SignUpResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="39" column="8" lean-forward="false" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/classroom/app/services/EmailSendingService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="28" column="32" lean-forward="false" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1577#1786#0" expanded="false" />
-            <element signature="e#1785#1786#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/classroom/app/services/SignUpService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="60" column="64" lean-forward="false" selection-start-line="60" selection-start-column="64" selection-end-line="60" selection-end-column="64" />
-          <folding>
-            <marker date="1493014747812" expanded="true" signature="1463:1693" ph="Insert into logging... " />
-            <marker date="1493014747812" expanded="true" signature="2807:2860" ph="Select email... logging" />
-            <marker date="1493014747812" expanded="true" signature="3770:3832" ph="Select userN... logging" />
-            <marker date="1493014747812" expanded="true" signature="4780:4867" ph="SELECT id, u... signUp" />
-            <marker date="1493014747812" expanded="true" signature="6252:6393" ph="UPDATE loggi... " />
-            <marker date="1493014747812" expanded="true" signature="7496:7578" ph="Update signi... " />
-            <marker date="1493014747812" expanded="true" signature="8588:8639" ph="Select statu... signin_up" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AbstractClassDigram.uml">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>com.classroom.app</OriginalElement>
-          <nodes>
-            <node x="454.0769230769231" y="-4.615384615384642">com.classroom.app.services.EmailSendingService</node>
-            <node x="1548.576923076923" y="-4.615384615384642">com.classroom.app.Interfaces.ChatRoomUsersInterface</node>
-            <node x="345.0769230769231" y="-4.615384615384642">com.classroom.app.model.SignUp</node>
-            <node x="-26.923076923076906" y="-4.615384615384642">com.classroom.app.Interfaces.SignUpInterface</node>
-            <node x="1346.848798076923" y="161.38461538461536">com.classroom.app.services.ChatRoomUsersService</node>
-            <node x="1772.576923076923" y="-4.615384615384642">com.classroom.app.model.ChatRoom</node>
-            <node x="1051.076923076923" y="-4.615384615384642">com.classroom.app.database.DBConnection</node>
-            <node x="1903.576923076923" y="-4.615384615384642">com.classroom.app.Interfaces.ChatRoomInterface</node>
-            <node x="949.0769230769231" y="-4.615384615384642">com.classroom.app.model.SignIn</node>
-            <node x="1730.576923076923" y="161.38461538461536">com.classroom.app.services.ChatRoomService</node>
-            <node x="1207.076923076923" y="-4.615384615384642">com.classroom.app.Interfaces.SignInInterface</node>
-            <node x="1137.6373397435898" y="247.38461538461536">com.classroom.app.webservices.SignInResource</node>
-            <node x="1020.3911591880344" y="161.38461538461536">com.classroom.app.services.SignInService</node>
-            <node x="718.7297008547009" y="161.38461538461536">com.classroom.app.services.MessageService</node>
-            <node x="387.3269230769231" y="161.38461538461536">com.classroom.app.services.SignUpService</node>
-            <node x="140.0769230769231" y="-4.615384615384642">com.classroom.app.services.KeyGenerationService</node>
-            <node x="653.0769230769231" y="-4.615384615384642">com.classroom.app.model.Message</node>
-            <node x="1832.354700854701" y="247.38461538461536">com.classroom.app.webservices.ChatRoomResource</node>
-            <node x="772.0769230769231" y="-4.615384615384642">com.classroom.app.Interfaces.MessageInterface</node>
-            <node x="1382.576923076923" y="-4.615384615384642">com.classroom.app.model.ChatRoomUsers</node>
-            <node x="182.95261752136753" y="247.38461538461536">com.classroom.app.webservices.SignUpResource</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="com.classroom.app.services.SignInService" target="com.classroom.app.model.SignIn">
-              <point x="-25.799999999999955" y="-18.0" />
-              <point x="1059.0911591880342" y="71.38461538461536" />
-              <point x="1017.4102564102564" y="71.38461538461536" />
-              <point x="27.33333333333337" y="18.0" />
-            </edge>
-            <edge source="com.classroom.app.services.ChatRoomUsersService" target="com.classroom.app.database.DBConnection">
-              <point x="-38.59999999999991" y="-18.0" />
-              <point x="1404.748798076923" y="121.38461538461536" />
-              <point x="1153.076923076923" y="121.38461538461536" />
-              <point x="34.0" y="18.0" />
-            </edge>
-            <edge source="com.classroom.app.services.ChatRoomUsersService" target="com.classroom.app.model.ChatRoomUsers">
-              <point x="0.0" y="-18.0" />
-              <point x="1443.348798076923" y="141.38461538461536" />
-              <point x="1419.076923076923" y="141.38461538461536" />
-              <point x="-36.5" y="18.0" />
-            </edge>
-            <edge source="com.classroom.app.services.SignUpService" target="com.classroom.app.model.SignIn">
-              <point x="34.0" y="-18.0" />
-              <point x="489.3269230769231" y="81.38461538461536" />
-              <point x="962.7435897435896" y="81.38461538461536" />
-              <point x="-27.33333333333337" y="18.0" />
-            </edge>
-            <edge source="com.classroom.app.webservices.SignInResource" target="com.classroom.app.services.SignInService">
-              <point x="-35.5" y="-18.0" />
-              <point x="1173.1373397435898" y="222.38461538461536" />
-              <point x="1084.8911591880344" y="222.38461538461536" />
-              <point x="0.0" y="18.0" />
-            </edge>
-            <edge source="com.classroom.app.webservices.SignInResource" target="com.classroom.app.Interfaces.SignInInterface">
-              <point x="35.5" y="-18.0" />
-              <point x="1244.1373397435898" y="222.38461538461536" />
-              <point x="1312.076923076923" y="222.38461538461536" />
-              <point x="35.0" y="18.0" />
-            </edge>
-            <edge source="com.classroom.app.webservices.ChatRoomResource" target="com.classroom.app.Interfaces.ChatRoomInterface">
-              <point x="42.75" y="-18.0" />
-              <point x="1960.604700854701" y="222.38461538461536" />
-              <point x="2030.326923076923" y="222.38461538461536" />
-              <point x="42.25" y="18.0" />
-            </edge>
-            <edge source="com.classroom.app.services.SignInService" target="com.classroom.app.Interfaces.SignInInterface">
-              <point x="51.60000000000002" y="-18.0" />
-              <point x="1136.4911591880343" y="141.38461538461536" />
-              <point x="1242.076923076923" y="141.38461538461536" />
-              <point x="-35.0" y="18.0" />
-            </edge>
-            <edge source="com.classroom.app.webservices.SignUpResource" target="com.classroom.app.Interfaces.SignUpInterface">
-              <point x="-37.25" y="-18.0" />
-              <point x="220.20261752136753" y="222.38461538461536" />
-              <point x="9.826923076923094" y="222.38461538461536" />
-              <point x="-36.75" y="18.0" />
-            </edge>
-            <edge source="com.classroom.app.services.SignUpService" target="com.classroom.app.Interfaces.SignUpInterface">
-              <point x="-61.19999999999993" y="-18.0" />
-              <point x="394.12692307692316" y="141.38461538461536" />
-              <point x="83.3269230769231" y="141.38461538461536" />
-              <point x="36.75" y="18.0" />
-            </edge>
-            <edge source="com.classroom.app.services.SignUpService" target="com.classroom.app.model.SignUp">
-              <point x="-6.7999999999999545" y="-18.0" />
-              <point x="448.52692307692314" y="101.38461538461536" />
-              <point x="411.8269230769231" y="101.38461538461536" />
-              <point x="22.25" y="18.0" />
-            </edge>
-            <edge source="com.classroom.app.services.SignUpService" target="com.classroom.app.database.DBConnection">
-              <point x="61.200000000000045" y="-18.0" />
-              <point x="516.5269230769231" y="101.38461538461536" />
-              <point x="1071.4769230769232" y="101.38461538461536" />
-              <point x="-47.59999999999991" y="18.0" />
-            </edge>
-            <edge source="com.classroom.app.services.SignUpService" target="com.classroom.app.services.EmailSendingService">
-              <point x="20.399999999999977" y="-18.0" />
-              <point x="475.7269230769231" y="71.38461538461536" />
-              <point x="588.3269230769231" y="71.38461538461536" />
-              <point x="44.75" y="18.0" />
-            </edge>
-            <edge source="com.classroom.app.services.MessageService" target="com.classroom.app.database.DBConnection">
-              <point x="60.83333333333326" y="-18.0" />
-              <point x="852.5630341880342" y="121.38461538461536" />
-              <point x="1098.676923076923" y="121.38461538461536" />
-              <point x="-20.40000000000009" y="18.0" />
-            </edge>
-            <edge source="com.classroom.app.services.ChatRoomService" target="com.classroom.app.database.DBConnection">
-              <point x="-65.83333333333326" y="-18.0" />
-              <point x="1743.7435897435898" y="111.38461538461536" />
-              <point x="1166.676923076923" y="111.38461538461536" />
-              <point x="47.59999999999991" y="18.0" />
-            </edge>
-            <edge source="com.classroom.app.webservices.ChatRoomResource" target="com.classroom.app.services.ChatRoomService">
-              <point x="-42.75" y="-18.0" />
-              <point x="1875.104700854701" y="222.38461538461536" />
-              <point x="1809.576923076923" y="222.38461538461536" />
-              <point x="0.0" y="18.0" />
-            </edge>
-            <edge source="com.classroom.app.services.MessageService" target="com.classroom.app.Interfaces.MessageInterface">
-              <point x="12.166666666666742" y="-18.0" />
-              <point x="803.8963675213677" y="71.38461538461536" />
-              <point x="850.5769230769231" y="71.38461538461536" />
-              <point x="0.0" y="18.0" />
-            </edge>
-            <edge source="com.classroom.app.services.SignUpService" target="com.classroom.app.services.KeyGenerationService">
-              <point x="-34.0" y="-18.0" />
-              <point x="421.3269230769231" y="121.38461538461536" />
-              <point x="278.8269230769231" y="121.38461538461536" />
-              <point x="46.25" y="18.0" />
-            </edge>
-            <edge source="com.classroom.app.services.ChatRoomUsersService" target="com.classroom.app.Interfaces.ChatRoomUsersInterface">
-              <point x="77.20000000000005" y="-18.0" />
-              <point x="1520.5487980769233" y="141.38461538461536" />
-              <point x="1650.576923076923" y="141.38461538461536" />
-              <point x="0.0" y="18.0" />
-            </edge>
-            <edge source="com.classroom.app.services.SignInService" target="com.classroom.app.database.DBConnection">
-              <point x="25.799999999999955" y="-18.0" />
-              <point x="1110.6911591880341" y="141.38461538461536" />
-              <point x="1125.876923076923" y="141.38461538461536" />
-              <point x="6.7999999999999545" y="18.0" />
-            </edge>
-            <edge source="com.classroom.app.webservices.SignUpResource" target="com.classroom.app.services.SignUpService">
-              <point x="37.25" y="-18.0" />
-              <point x="294.70261752136753" y="222.38461538461536" />
-              <point x="455.3269230769231" y="222.38461538461536" />
-              <point x="0.0" y="18.0" />
-            </edge>
-            <edge source="com.classroom.app.services.MessageService" target="com.classroom.app.model.Message">
-              <point x="-60.83333333333326" y="-18.0" />
-              <point x="730.8963675213677" y="71.38461538461536" />
-              <point x="669.5769230769231" y="71.38461538461536" />
-              <point x="-33.0" y="18.0" />
-            </edge>
-            <edge source="com.classroom.app.services.ChatRoomService" target="com.classroom.app.Interfaces.ChatRoomInterface">
-              <point x="65.83333333333326" y="-18.0" />
-              <point x="1875.4102564102564" y="141.38461538461536" />
-              <point x="1945.826923076923" y="141.38461538461536" />
-              <point x="-42.25" y="18.0" />
-            </edge>
-            <edge source="com.classroom.app.services.ChatRoomService" target="com.classroom.app.model.ChatRoom">
-              <point x="39.5" y="-18.0" />
-              <point x="1849.076923076923" y="141.38461538461536" />
-              <point x="1865.076923076923" y="141.38461538461536" />
-              <point x="37.0" y="18.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.3000000000000003" x="1084.6153846153845" y="80.23076923076925" />
-          <SelectedNodes>
-            <node>com.classroom.app.services.EmailSendingService</node>
-            <node>com.classroom.app.Interfaces.ChatRoomUsersInterface</node>
-            <node>com.classroom.app.model.SignUp</node>
-            <node>com.classroom.app.Interfaces.SignUpInterface</node>
-            <node>com.classroom.app.services.ChatRoomUsersService</node>
-            <node>com.classroom.app.model.ChatRoom</node>
-            <node>com.classroom.app.database.DBConnection</node>
-            <node>com.classroom.app.Interfaces.ChatRoomInterface</node>
-            <node>com.classroom.app.model.SignIn</node>
-            <node>com.classroom.app.services.ChatRoomService</node>
-            <node>com.classroom.app.Interfaces.SignInInterface</node>
-            <node>com.classroom.app.webservices.SignInResource</node>
-            <node>com.classroom.app.services.SignInService</node>
-            <node>com.classroom.app.services.MessageService</node>
-            <node>com.classroom.app.services.SignUpService</node>
-            <node>com.classroom.app.services.KeyGenerationService</node>
-            <node>com.classroom.app.model.Message</node>
-            <node>com.classroom.app.webservices.ChatRoomResource</node>
-            <node>com.classroom.app.Interfaces.MessageInterface</node>
-            <node>com.classroom.app.model.ChatRoomUsers</node>
-            <node>com.classroom.app.webservices.SignUpResource</node>
-          </SelectedNodes>
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ClassDigram.uml">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -2334,7 +1707,7 @@
               <point x="0.0" y="72.0" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.9" x="1965.7777777777778" y="461.44444444444446" />
+          <settings layout="Hierarchic Group" zoom="0.9" x="1374.6666666666667" y="373.6666666666667" />
           <SelectedNodes>
             <node>com.classroom.app.services.EmailSendingService</node>
             <node>com.classroom.app.Interfaces.ChatRoomUsersInterface</node>
@@ -2365,6 +1738,76 @@
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AbstractClassDigram.uml">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.classroom.app</OriginalElement>
+          <nodes>
+            <node x="" y="">com.classroom.app.services.EmailSendingService</node>
+            <node x="" y="">com.classroom.app.Interfaces.ChatRoomUsersInterface</node>
+            <node x="" y="">com.classroom.app.model.SignUp</node>
+            <node x="" y="">com.classroom.app.Interfaces.SignUpInterface</node>
+            <node x="" y="">com.classroom.app.services.ChatRoomUsersService</node>
+            <node x="" y="">com.classroom.app.model.ChatRoom</node>
+            <node x="" y="">com.classroom.app.database.DBConnection</node>
+            <node x="" y="">com.classroom.app.Interfaces.ChatRoomInterface</node>
+            <node x="" y="">com.classroom.app.model.SignIn</node>
+            <node x="" y="">com.classroom.app.services.ChatRoomService</node>
+            <node x="" y="">com.classroom.app.Interfaces.SignInInterface</node>
+            <node x="" y="">com.classroom.app.webservices.SignInResource</node>
+            <node x="" y="">com.classroom.app.services.SignInService</node>
+            <node x="" y="">com.classroom.app.services.MessageService</node>
+            <node x="" y="">com.classroom.app.services.SignUpService</node>
+            <node x="" y="">com.classroom.app.services.KeyGenerationService</node>
+            <node x="" y="">com.classroom.app.model.Message</node>
+            <node x="" y="">com.classroom.app.webservices.ChatRoomResource</node>
+            <node x="" y="">com.classroom.app.Interfaces.MessageInterface</node>
+            <node x="" y="">com.classroom.app.model.ChatRoomUsers</node>
+            <node x="" y="">com.classroom.app.webservices.SignUpResource</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.3000000000000003" x="1493.8461538461538" y="141.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/classroom/app/services/EmailSendingService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/classroom/app/services/SignUpService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="60" column="113" lean-forward="true" selection-start-line="60" selection-start-column="113" selection-end-line="60" selection-end-column="113" />
+          <folding>
+            <marker date="1493029785994" expanded="true" signature="1463:1693" ph="Insert into logging... " />
+            <marker date="1493029785994" expanded="true" signature="2810:2863" ph="Select email... logging" />
+            <marker date="1493029785994" expanded="true" signature="3773:3835" ph="Select userN... logging" />
+            <marker date="1493029785994" expanded="true" signature="4783:4870" ph="SELECT id, u... signUp" />
+            <marker date="1493029785994" expanded="true" signature="6255:6396" ph="UPDATE loggi... " />
+            <marker date="1493029785994" expanded="true" signature="7499:7581" ph="Update signi... " />
+            <marker date="1493029785994" expanded="true" signature="8591:8642" ph="Select statu... signin_up" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/classroom/app/webservices/SignUpResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="19" column="29" lean-forward="true" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
