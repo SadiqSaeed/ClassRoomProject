@@ -17,7 +17,7 @@ import java.util.List;
  */
 public class SignUpService implements SignUpInterface {
 
-    private Connection con = null;
+    private Connection connection = null;
     private String Message = null;
     private DBConnection dbConnection;
     private SignUpService signUpService;
@@ -39,9 +39,9 @@ public class SignUpService implements SignUpInterface {
 
         SignUp signUp = new SignUp(userName, email, password);
         try {
-            con = dbConnection.openConnection();
+            connection = dbConnection.openConnection();
 
-            statement = con.createStatement();
+            statement = connection.createStatement();
 
             query = "Insert into users (userId, userName, email, password, status) Values ('" + id + "'," +
                     "'" + signUp.getUserName() + "', '" + signUp.getEmail() + "', '" + signUp.getPassword() + "', '" + signUp.getStatus() + "')";
@@ -63,10 +63,13 @@ public class SignUpService implements SignUpInterface {
         } catch (SQLException ex) {
             ex.printStackTrace();
         } finally {
-            dbConnection.closeConnection(con);
+            try {
+                statement.close();
+                dbConnection.closeConnection(connection);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
         }
-
-
         return Message;
     }
 
@@ -74,9 +77,9 @@ public class SignUpService implements SignUpInterface {
     public String checkIfUserExists(String email) {
         dbConnection = new DBConnection();
         try {
-            con = dbConnection.openConnection();
+            connection = dbConnection.openConnection();
             query = "Select email from users where email = '" + email + "' ";
-            statement = con.createStatement();
+            statement = connection.createStatement();
             resultSet = statement.executeQuery(query);
 
             if (resultSet.next()) {
@@ -87,6 +90,14 @@ public class SignUpService implements SignUpInterface {
             }
         } catch (SQLException e) {
             e.printStackTrace();
+        } finally {
+            try {
+                statement.close();
+                resultSet.close();
+                dbConnection.closeConnection(connection);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
         }
 
         return Message;
@@ -96,9 +107,9 @@ public class SignUpService implements SignUpInterface {
     public String checkUserName(String userName) {
         dbConnection = new DBConnection();
         try {
-            con = dbConnection.openConnection();
+            connection = dbConnection.openConnection();
             query = "Select userName from users where userName = '" + userName + "'";
-            statement = con.createStatement();
+            statement = connection.createStatement();
             resultSet = statement.executeQuery(query);
 
             if (resultSet.next()) {
@@ -109,6 +120,14 @@ public class SignUpService implements SignUpInterface {
             }
         } catch (SQLException e) {
             e.printStackTrace();
+        } finally {
+            try {
+                statement.close();
+                resultSet.close();
+                dbConnection.closeConnection(connection);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
         }
         return Message;
     }
@@ -118,14 +137,14 @@ public class SignUpService implements SignUpInterface {
         dbConnection = new DBConnection();
         userData = new ArrayList<>();
         try {
-            con = dbConnection.openConnection();
+            connection = dbConnection.openConnection();
             query = "SELECT userId, userName, email, password FROM users WHERE userName = '" + userName + "'";
-            statement = con.createStatement();
+            statement = connection.createStatement();
             resultSet = statement.executeQuery(query);
 
             while (resultSet.next()) {
                 SignUp signUp = new SignUp();
-                signUp.setId(resultSet.getString("id"));
+                signUp.setId(resultSet.getString("userId"));
                 signUp.setUserName(resultSet.getString("userName"));
                 signUp.setEmail(resultSet.getString("email"));
                 signUp.setPassword(resultSet.getString("password"));
@@ -134,7 +153,13 @@ public class SignUpService implements SignUpInterface {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            dbConnection.closeConnection(con);
+            try {
+                statement.close();
+                resultSet.close();
+                dbConnection.closeConnection(connection);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
         }
 
         return userData;
@@ -152,8 +177,8 @@ public class SignUpService implements SignUpInterface {
         String checkMessage = null;
         dbConnection = new DBConnection();
         try {
-            con = dbConnection.openConnection();
-            statement = con.createStatement();
+            connection = dbConnection.openConnection();
+            statement = connection.createStatement();
 
             query = "UPDATE users SET userName = '" + signUp.getUserName() + "', password = '" + signUp.getPassword() + "' WHERE userId = '" + signUp.getId() + "'";
 
@@ -168,7 +193,13 @@ public class SignUpService implements SignUpInterface {
         } catch (SQLException ex) {
             ex.printStackTrace();
         } finally {
-            dbConnection.closeConnection(con);
+            try {
+                statement.close();
+                resultSet.close();
+                dbConnection.closeConnection(connection);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
         }
         return Message;
     }
@@ -178,8 +209,8 @@ public class SignUpService implements SignUpInterface {
         SignIn signIn = new SignIn();
         dbConnection = new DBConnection();
         try {
-            con = dbConnection.openConnection();
-            statement = con.createStatement();
+            connection = dbConnection.openConnection();
+            statement = connection.createStatement();
 
             signIn.setStatus(checkStatus(id));
             System.out.println(signIn.getStatus());
@@ -199,7 +230,13 @@ public class SignUpService implements SignUpInterface {
         } catch (SQLException ex) {
             ex.printStackTrace();
         } finally {
-            dbConnection.closeConnection(con);
+            try {
+                statement.close();
+                resultSet.close();
+                dbConnection.closeConnection(connection);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
         }
         return Message;
     }
@@ -209,8 +246,8 @@ public class SignUpService implements SignUpInterface {
         int status = 0;
         dbConnection = new DBConnection();
         try {
-            con = dbConnection.openConnection();
-            statement = con.createStatement();
+            connection = dbConnection.openConnection();
+            statement = connection.createStatement();
 
             query = "Select status from users where userId= '" + id + "'";
 
@@ -222,7 +259,13 @@ public class SignUpService implements SignUpInterface {
         } catch (SQLException ex) {
             ex.printStackTrace();
         } finally {
-            dbConnection.closeConnection(con);
+            try {
+                statement.close();
+                resultSet.close();
+                dbConnection.closeConnection(connection);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
         }
         return status;
     }

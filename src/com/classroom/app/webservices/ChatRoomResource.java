@@ -35,7 +35,7 @@ public class ChatRoomResource {
     public Response updateSession(@PathParam("title") String title, @PathParam("description") String description,
                                   @PathParam("chatRoomId") String chatRoomId) {
         return Response.status(200)
-                .entity(chatRoomInterface.updateSession(title, description, chatRoomId))
+                .entity(chatRoomInterface.updateSessionInfo(title, description, chatRoomId))
                 .build();
     }
 
