@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5d8b2a6-82b4-48b3-9bff-944306ff9e6f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/classroom/app/services/SignUpService.java" afterPath="$PROJECT_DIR$/src/com/classroom/app/services/SignUpService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/classroom/app/webservices/ChatRoomResource.java" afterPath="$PROJECT_DIR$/src/com/classroom/app/webservices/ChatRoomResource.java" />
-    </list>
+    <list default="true" id="b5d8b2a6-82b4-48b3-9bff-944306ff9e6f" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -342,10 +338,10 @@
                   <point x="39.90000000000009" y="99.5" />
                 </edge>
                 <edge source="com.classroom.app.services.ChatRoomUsersService" target="com.classroom.app.model.ChatRoomUsers">
-                  <point x="0.0" y="-126.5" />
-                  <point x="3485.0690972222224" y="742.0" />
-                  <point x="3425.0" y="742.0" />
-                  <point x="-76.5" y="140.5" />
+                  <point x="71.0" y="-126.5" />
+                  <point x="3556.0690972222224" y="742.0" />
+                  <point x="3578.0" y="742.0" />
+                  <point x="76.5" y="140.5" />
                 </edge>
                 <edge source="com.classroom.app.services.SignUpService" target="com.classroom.app.model.SignIn">
                   <point x="133.75" y="-248.0" />
@@ -420,8 +416,8 @@
                   <point x="-65.0" y="126.5" />
                 </edge>
                 <edge source="com.classroom.app.services.MessageService" target="com.classroom.app.database.DBConnection">
-                  <point x="172.91666666666674" y="-167.0" />
-                  <point x="2140.5020833333338" y="722.0" />
+                  <point x="172.91666666666652" y="-167.0" />
+                  <point x="2140.5020833333333" y="722.0" />
                   <point x="2810.1" y="722.0" />
                   <point x="-39.90000000000009" y="99.5" />
                 </edge>
@@ -468,8 +464,30 @@
                   <point x="0.0" y="72.0" />
                 </edge>
               </edges>
-              <settings layout="Hierarchic Group" zoom="0.9" x="4065.777777777778" y="1143.4444444444443" />
-              <SelectedNodes />
+              <settings layout="Hierarchic Group" zoom="0.9" x="1965.7777777777778" y="461.44444444444446" />
+              <SelectedNodes>
+                <node>com.classroom.app.services.EmailSendingService</node>
+                <node>com.classroom.app.Interfaces.ChatRoomUsersInterface</node>
+                <node>com.classroom.app.model.SignUp</node>
+                <node>com.classroom.app.Interfaces.SignUpInterface</node>
+                <node>com.classroom.app.services.ChatRoomUsersService</node>
+                <node>com.classroom.app.model.ChatRoom</node>
+                <node>com.classroom.app.database.DBConnection</node>
+                <node>com.classroom.app.Interfaces.ChatRoomInterface</node>
+                <node>com.classroom.app.model.SignIn</node>
+                <node>com.classroom.app.services.ChatRoomService</node>
+                <node>com.classroom.app.Interfaces.SignInInterface</node>
+                <node>com.classroom.app.webservices.SignInResource</node>
+                <node>com.classroom.app.services.SignInService</node>
+                <node>com.classroom.app.services.MessageService</node>
+                <node>com.classroom.app.services.SignUpService</node>
+                <node>com.classroom.app.services.KeyGenerationService</node>
+                <node>com.classroom.app.model.Message</node>
+                <node>com.classroom.app.webservices.ChatRoomResource</node>
+                <node>com.classroom.app.Interfaces.MessageInterface</node>
+                <node>com.classroom.app.model.ChatRoomUsers</node>
+                <node>com.classroom.app.webservices.SignUpResource</node>
+              </SelectedNodes>
               <Categories>
                 <Category>Fields</Category>
                 <Category>Constructors</Category>
@@ -1275,12 +1293,12 @@
       <workItem from="1492755885499" duration="1912000" />
       <workItem from="1492847323285" duration="1510000" />
       <workItem from="1492938088418" duration="5617000" />
-      <workItem from="1493012517258" duration="3457000" />
+      <workItem from="1493012517258" duration="3701000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99608000" />
+    <option name="totallyTimeSpent" value="99852000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1618" height="868" extended-state="6" />
@@ -2190,10 +2208,10 @@
               <point x="39.90000000000009" y="99.5" />
             </edge>
             <edge source="com.classroom.app.services.ChatRoomUsersService" target="com.classroom.app.model.ChatRoomUsers">
-              <point x="0.0" y="-126.5" />
-              <point x="3485.0690972222224" y="742.0" />
-              <point x="3425.0" y="742.0" />
-              <point x="-76.5" y="140.5" />
+              <point x="71.0" y="-126.5" />
+              <point x="3556.0690972222224" y="742.0" />
+              <point x="3578.0" y="742.0" />
+              <point x="76.5" y="140.5" />
             </edge>
             <edge source="com.classroom.app.services.SignUpService" target="com.classroom.app.model.SignIn">
               <point x="133.75" y="-248.0" />
@@ -2268,8 +2286,8 @@
               <point x="-65.0" y="126.5" />
             </edge>
             <edge source="com.classroom.app.services.MessageService" target="com.classroom.app.database.DBConnection">
-              <point x="172.91666666666674" y="-167.0" />
-              <point x="2140.5020833333338" y="722.0" />
+              <point x="172.91666666666652" y="-167.0" />
+              <point x="2140.5020833333333" y="722.0" />
               <point x="2810.1" y="722.0" />
               <point x="-39.90000000000009" y="99.5" />
             </edge>
@@ -2316,8 +2334,30 @@
               <point x="0.0" y="72.0" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.9" x="4065.777777777778" y="1143.4444444444443" />
-          <SelectedNodes />
+          <settings layout="Hierarchic Group" zoom="0.9" x="1965.7777777777778" y="461.44444444444446" />
+          <SelectedNodes>
+            <node>com.classroom.app.services.EmailSendingService</node>
+            <node>com.classroom.app.Interfaces.ChatRoomUsersInterface</node>
+            <node>com.classroom.app.model.SignUp</node>
+            <node>com.classroom.app.Interfaces.SignUpInterface</node>
+            <node>com.classroom.app.services.ChatRoomUsersService</node>
+            <node>com.classroom.app.model.ChatRoom</node>
+            <node>com.classroom.app.database.DBConnection</node>
+            <node>com.classroom.app.Interfaces.ChatRoomInterface</node>
+            <node>com.classroom.app.model.SignIn</node>
+            <node>com.classroom.app.services.ChatRoomService</node>
+            <node>com.classroom.app.Interfaces.SignInInterface</node>
+            <node>com.classroom.app.webservices.SignInResource</node>
+            <node>com.classroom.app.services.SignInService</node>
+            <node>com.classroom.app.services.MessageService</node>
+            <node>com.classroom.app.services.SignUpService</node>
+            <node>com.classroom.app.services.KeyGenerationService</node>
+            <node>com.classroom.app.model.Message</node>
+            <node>com.classroom.app.webservices.ChatRoomResource</node>
+            <node>com.classroom.app.Interfaces.MessageInterface</node>
+            <node>com.classroom.app.model.ChatRoomUsers</node>
+            <node>com.classroom.app.webservices.SignUpResource</node>
+          </SelectedNodes>
           <Categories>
             <Category>Fields</Category>
             <Category>Constructors</Category>
