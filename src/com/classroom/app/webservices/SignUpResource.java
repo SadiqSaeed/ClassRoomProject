@@ -19,25 +19,35 @@ import java.util.List;
 @Produces(MediaType.APPLICATION_JSON)
 public class SignUpResource {
 
-    SignUpInterface signUpInterface = new SignUpService();
-    SignUp signUp = new SignUp();
+    private SignUpInterface signUpInterface;
+    private SignUp signUp;
 
     @POST
     @Path("/{userName}/{email}/{password}")
     @Produces(MediaType.TEXT_PLAIN)
     public Response addUser(@PathParam("userName") String userName, @PathParam("email") String email,
                             @PathParam("password") String password) {
+        //Creating Reference
+        signUpInterface = new SignUpService();
+        signUp = new SignUp();
+
+        //Setting Values
         signUp.setUserName(userName);
         signUp.setEmail(email);
         signUp.setPassword(password);
+
+        //Returning Response
         return Response.status(200)
-                .entity("Message: " + signUpInterface.createUser(signUp.getUserName(), signUp.getEmail().toLowerCase(), signUp.getPassword()))
+                .entity("Message: " + signUpInterface.createUser(signUp))
                 .build();
     }
 
     @GET
     @Path("/{userName}")
     public List<SignUp> getUserData(@PathParam("userName") String userName) {
+        //Creating Reference
+        signUpInterface = new SignUpService();
+        //Returning userData in JSON Format
         return signUpInterface.getUserData(userName);
     }
 
@@ -46,14 +56,28 @@ public class SignUpResource {
     @Produces(MediaType.TEXT_PLAIN)
     public Response updateUser(@PathParam("id") String id, @PathParam("userName") String userName,
                                @PathParam("password") String password) {
+
+        //Creating Reference
+        signUpInterface = new SignUpService();
+        signUp = new SignUp();
+
+        //Setting Values
+        signUp.setId(id);
+        signUp.setUserName(userName);
+        signUp.setPassword(password);
+
+        //Returning Response
         return Response.status(200)
-                .entity("Message: " + signUpInterface.updateUserData(id, userName, password))
+                .entity("Message: " + signUpInterface.updateUserData(signUp))
                 .build();
     }
 
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public Response updateStatus(@QueryParam("id") String id) {
+        //Creating Reference
+        signUpInterface = new SignUpService();
+        //Returning Response
         return Response.status(200)
                 .entity("Message: " + signUpInterface.updateStatus(id))
                 .build();

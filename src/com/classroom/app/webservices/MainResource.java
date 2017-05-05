@@ -13,10 +13,11 @@ public class MainResource extends Application {
 
     public Set<Class<?>> getAllClasses() {
         Set<Class<?>> set = new HashSet<>();
-        set.add(MyResource.class);
         set.add(SignInResource.class);
         set.add(SignUpResource.class);
         set.add(ChatRoomResource.class);
+        set.add(ChatRoomUsersResource.class);
+        set.add(MessageResource.class);
         return set;
     }
 

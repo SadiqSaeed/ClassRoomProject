@@ -17,15 +17,27 @@ import java.util.List;
 @Produces(MediaType.APPLICATION_JSON)
 public class ChatRoomResource {
 
-    private ChatRoomInterface chatRoomInterface = new ChatRoomService();
+    private ChatRoomInterface chatRoomInterface;
+    private ChatRoom chatRoom;
 
     @POST
     @Path("/{title}/{description}/{groupType}/{groupAdmin}")
     @Produces(MediaType.TEXT_PLAIN)
     public Response createSession(@PathParam("title") String title, @PathParam("description") String description,
                                   @PathParam("groupType") int groupType, @PathParam("groupAdmin") String groupAdmin) {
+        //Creating Reference
+        chatRoomInterface = new ChatRoomService();
+        chatRoom = new ChatRoom();
+
+        //Setting Values
+        chatRoom.setTitle(title);
+        chatRoom.setDescription(description);
+        chatRoom.setGroupType(groupType);
+        chatRoom.setGroupAdmin(groupAdmin);
+
+        //Returning Response
         return Response.status(200)
-                .entity(chatRoomInterface.createSession(title, description, groupType, groupAdmin))
+                .entity(chatRoomInterface.createSession(chatRoom))
                 .build();
     }
 
@@ -34,14 +46,44 @@ public class ChatRoomResource {
     @Produces(MediaType.TEXT_PLAIN)
     public Response updateSession(@PathParam("title") String title, @PathParam("description") String description,
                                   @PathParam("chatRoomId") String chatRoomId) {
+        //Creating Reference
+        chatRoomInterface = new ChatRoomService();
+        chatRoom = new ChatRoom();
+
+        //Setting Values
+        chatRoom.setTitle(title);
+        chatRoom.setDescription(description);
+        chatRoom.setChatRoomId(chatRoomId);
+
+        //Returning Response
         return Response.status(200)
-                .entity(chatRoomInterface.updateSessionInfo(title, description, chatRoomId))
+                .entity(chatRoomInterface.updateSessionInfo(chatRoom))
                 .build();
     }
 
     @GET
-    @Path("/{chatRoomId}")
-    public List<ChatRoom> getChatRoomInfo(@PathParam("chatRoomId") String chatRoomId) {
+    public List<ChatRoom> getChatRoomInfo(@QueryParam("chatRoomId") String chatRoomId) {
+        //Creating Reference
+        chatRoomInterface = new ChatRoomService();
+
+        //Returning Response in JSON Format
         return chatRoomInterface.getChatRoomInfo(chatRoomId);
+    }
+
+    @GET
+    public List<ChatRoom> getAllChatRoomsInfoForUser(@QueryParam("userId") String userId) {
+        //Creating Reference
+        chatRoomInterface = new ChatRoomService();
+
+        //Returning Response in JSON Format
+        return chatRoomInterface.getAllChatRoomsInfoForUser(userId);
+    }
+
+    @DELETE
+    public void deleteSession(@QueryParam("chatRoomId") String chatRoomId) {
+        //Creating Reference
+        chatRoomInterface = new ChatRoomService();
+        //Calling the deleteSession method
+        chatRoomInterface.deleteSession(chatRoomId);
     }
 }

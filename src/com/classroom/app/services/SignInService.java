@@ -20,7 +20,6 @@ public class SignInService implements SignInInterface {
     @Override
     public String authenticateUser(String email, String password) {
         dbConnection = new DBConnection();
-        signIn = new SignIn(email, password);
         try {
             con = dbConnection.openConnection();
             statement = con.createStatement();

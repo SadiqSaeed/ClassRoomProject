@@ -19,13 +19,11 @@ public class ChatRoomUsersService implements ChatRoomUsersInterface {
     private String query;
     private String message;
     private DBConnection dbConnection;
-    private ChatRoomUsers chatRoomUsers;
 
 
     @Override
-    public String addUser(String userId, String chatRoomId) {
+    public String addUser(ChatRoomUsers chatRoomUsers) {
         dbConnection = new DBConnection();
-        chatRoomUsers = new ChatRoomUsers(userId, chatRoomId);
         try {
             connection = dbConnection.openConnection();
             statement = connection.createStatement();
@@ -51,9 +49,8 @@ public class ChatRoomUsersService implements ChatRoomUsersInterface {
     }
 
     @Override
-    public String removeUser(String userId, String chatRoomId) {
+    public String removeUser(ChatRoomUsers chatRoomUsers) {
         dbConnection = new DBConnection();
-        chatRoomUsers = new ChatRoomUsers(userId, chatRoomId);
         try {
             connection = dbConnection.openConnection();
             statement = connection.createStatement();

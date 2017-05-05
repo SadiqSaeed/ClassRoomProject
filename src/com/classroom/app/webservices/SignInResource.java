@@ -8,19 +8,21 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import com.classroom.app.Interfaces.SignInInterface;
+import com.classroom.app.model.SignIn;
 import com.classroom.app.services.SignInService;
 
 @Path("/SignIn")
 @Produces(MediaType.TEXT_PLAIN)
 public class SignInResource {
 
-    SignInInterface signIn = new SignInService();
+    private SignInInterface signInInterface;
 
     @GET
-    @Path("/{userName}/{password}")
-    public Response authenticate(@PathParam("userName") String userName, @PathParam("password") String password) {
+    @Path("/{email}/{password}")
+    public Response authenticate(@PathParam("email") String email, @PathParam("password") String password) {
+        signInInterface = new SignInService();
         return Response.status(200)
-                .entity(signIn.authenticateUser(userName, password))
+                .entity(signInInterface.authenticateUser(email, password))
                 .build();
     }
 }

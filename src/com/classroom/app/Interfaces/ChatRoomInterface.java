@@ -10,11 +10,13 @@ import java.util.List;
  */
 public interface ChatRoomInterface {
 
-    String createSession(String title, String description, int groupType, String groupAdmin);
+    String createSession(ChatRoom chatRoom);
 
-    String updateSessionInfo(String title, String description, String chatRoomId);
+    String updateSessionInfo(ChatRoom chatRoom);
 
     List<ChatRoom> getChatRoomInfo(String chatRoomId);
 
     List<ChatRoom> getAllChatRoomsInfoForUser(String userId);
+
+    void deleteSession(String chatRoomId);
 }

@@ -9,7 +9,7 @@ import java.util.List;
  */
 public interface SignUpInterface {
 
-    String createUser(String userName, String email, String password);
+    String createUser(SignUp signUp);
 
     String checkIfUserExists(String email);
 
@@ -17,7 +17,7 @@ public interface SignUpInterface {
 
     List<SignUp> getUserData(String userName);
 
-    String updateUserData(String id, String userName, String password);
+    String updateUserData(SignUp signUp);
 
     String updateStatus(String id);
 

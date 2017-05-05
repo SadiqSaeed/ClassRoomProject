@@ -21,20 +21,19 @@ public class ChatRoomService implements ChatRoomInterface {
     private ResultSet resultSet;
     private String query;
     private DBConnection dbConnection;
-    private ChatRoom chatRoom;
     private String message;
     private List<ChatRoom> chatRoomList;
 
 
     @Override
-    public String createSession(String title, String description, int groupType, String groupAdmin) {
+    public String createSession(ChatRoom chatRoom) {
         dbConnection = new DBConnection();
-        chatRoom = new ChatRoom(KeyGenerationService.generateRandomString(10), title, description, groupType, groupAdmin);
+        String id = KeyGenerationService.generateRandomString(10);
         try {
             connection = dbConnection.openConnection();
             statement = connection.createStatement();
 
-            query = "Insert into chatroom(chatRoomId, title, description, groupType, groupAdmin) Values('" + chatRoom.getChatRoomId() + "'," +
+            query = "Insert into chatroom(chatRoomId, title, description, groupType, groupAdmin) Values('" + id + "'," +
                     "'" + chatRoom.getTitle() + "', '" + chatRoom.getDescription() + "', '" + chatRoom.getGroupType() + "', '" + chatRoom.getGroupAdmin() + "')";
 
             if (!(chatRoom.getTitle().equals("") && chatRoom.getDescription().equals(""))) {
@@ -63,9 +62,8 @@ public class ChatRoomService implements ChatRoomInterface {
     }
 
     @Override
-    public String updateSessionInfo(String title, String description, String chatRoomId) {
+    public String updateSessionInfo(ChatRoom chatRoom) {
         dbConnection = new DBConnection();
-        chatRoom = new ChatRoom(title, description, chatRoomId);
         try {
             connection = dbConnection.openConnection();
             statement = connection.createStatement();
@@ -102,18 +100,16 @@ public class ChatRoomService implements ChatRoomInterface {
     public List<ChatRoom> getChatRoomInfo(String chatRoomId) {
         chatRoomList = new ArrayList<>();
         dbConnection = new DBConnection();
-        chatRoom = new ChatRoom();
-        chatRoom.setChatRoomId(chatRoomId);
         try {
             connection = dbConnection.openConnection();
             statement = connection.createStatement();
 
-            query = "Select * from chatroom where chatRoomId = '" + chatRoom.getChatRoomId() + "' ";
+            query = "Select * from chatroom where chatRoomId = '" + chatRoomId + "' ";
 
             resultSet = statement.executeQuery(query);
 
             while (resultSet.next()) {
-                chatRoom = new ChatRoom();
+                ChatRoom chatRoom = new ChatRoom();
                 chatRoom.setChatRoomId(resultSet.getString("chatRoomId"));
                 chatRoom.setTitle(resultSet.getString("title"));
                 chatRoom.setDescription(resultSet.getString("description"));
@@ -138,10 +134,50 @@ public class ChatRoomService implements ChatRoomInterface {
 
     @Override
     public List<ChatRoom> getAllChatRoomsInfoForUser(String userId) {
+        chatRoomList = new ArrayList<>();
         dbConnection = new DBConnection();
-        
+        try {
+            connection = dbConnection.openConnection();
+            statement = connection.createStatement();
 
-        return null;
+            query = "Select * from chatroom  in (SELECT chatRoomId where userID = '" + userId + "')";
+
+            resultSet = statement.executeQuery(query);
+
+            while (resultSet.next()) {
+                ChatRoom chatRoom = new ChatRoom();
+                chatRoom.setChatRoomId(resultSet.getString("chatRoomId"));
+                chatRoom.setTitle(resultSet.getString("title"));
+                chatRoom.setDescription(resultSet.getString("description"));
+                chatRoom.setCreatedAt(resultSet.getTimestamp("createdAt"));
+                chatRoom.setGroupType(resultSet.getInt("groupType"));
+                chatRoom.setGroupAdmin(resultSet.getString("groupAdmin"));
+                chatRoomList.add(chatRoom);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            dbConnection.closeConnection(connection);
+        }
+        return chatRoomList;
+    }
+
+    @Override
+    public void deleteSession(String chatRoomId) {
+        dbConnection = new DBConnection();
+        try {
+            connection = dbConnection.openConnection();
+            statement = connection.createStatement();
+
+            query = "delete from chatRoom where chatRoomId='" + chatRoomId + "'";
+
+            statement.equals(query);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            dbConnection.closeConnection(connection);
+        }
+
     }
 
 

@@ -29,15 +29,12 @@ public class SignUpService implements SignUpInterface {
     private String query;
 
     @Override
-    public String createUser(String userName, String email, String password) {
+    public String createUser(SignUp signUp) {
         signUpService = new SignUpService();
         keyGenerationService = new KeyGenerationService();
         dbConnection = new DBConnection();
         String id = keyGenerationService.generateRandomString(15);
-
         emailSendingService = new EmailSendingService();
-
-        SignUp signUp = new SignUp(userName, email, password);
         try {
             connection = dbConnection.openConnection();
 
@@ -49,8 +46,8 @@ public class SignUpService implements SignUpInterface {
             String checkMessage1 = null;
             String checkMessage2 = null;
 
-            checkMessage1 = signUpService.checkIfUserExists(email);
-            checkMessage2 = signUpService.checkUserName(userName);
+            checkMessage1 = signUpService.checkIfUserExists(signUp.getEmail());
+            checkMessage2 = signUpService.checkUserName(signUp.getUserName());
 
             if (checkMessage1 != null) {
                 Message = checkMessage1;
@@ -58,17 +55,12 @@ public class SignUpService implements SignUpInterface {
                 Message = checkMessage2;
             } else {
                 statement.execute(query);
-                Message = "Account created Successfully "; //+ emailSendingService.sendMail(id, email, userName);
+                Message = "Account created Successfully " + emailSendingService.sendMail(id, signUp.getEmail(), signUp.getUserName());
             }
         } catch (SQLException ex) {
             ex.printStackTrace();
         } finally {
-            try {
-                statement.close();
-                dbConnection.closeConnection(connection);
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
+            dbConnection.closeConnection(connection);
         }
         return Message;
     }
@@ -91,13 +83,7 @@ public class SignUpService implements SignUpInterface {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            try {
-                statement.close();
-                resultSet.close();
-                dbConnection.closeConnection(connection);
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
+            dbConnection.closeConnection(connection);
         }
 
         return Message;
@@ -121,13 +107,7 @@ public class SignUpService implements SignUpInterface {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            try {
-                statement.close();
-                resultSet.close();
-                dbConnection.closeConnection(connection);
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
+            dbConnection.closeConnection(connection);
         }
         return Message;
     }
@@ -153,27 +133,15 @@ public class SignUpService implements SignUpInterface {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            try {
-                statement.close();
-                resultSet.close();
-                dbConnection.closeConnection(connection);
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
+            dbConnection.closeConnection(connection);
         }
 
         return userData;
     }
 
     @Override
-    public String updateUserData(String id, String userName, String password) {
+    public String updateUserData(SignUp signUp) {
         signUpService = new SignUpService();
-
-        SignUp signUp = new SignUp();
-        signUp.setId(id);
-        signUp.setUserName(userName);
-        signUp.setPassword(password);
-
         String checkMessage = null;
         dbConnection = new DBConnection();
         try {
@@ -182,7 +150,7 @@ public class SignUpService implements SignUpInterface {
 
             query = "UPDATE users SET userName = '" + signUp.getUserName() + "', password = '" + signUp.getPassword() + "' WHERE userId = '" + signUp.getId() + "'";
 
-            checkMessage = signUpService.checkUserName(userName);
+            checkMessage = signUpService.checkUserName(signUp.getUserName());
 
             if (checkMessage != null) {
                 Message = checkMessage;
@@ -193,13 +161,7 @@ public class SignUpService implements SignUpInterface {
         } catch (SQLException ex) {
             ex.printStackTrace();
         } finally {
-            try {
-                statement.close();
-                resultSet.close();
-                dbConnection.closeConnection(connection);
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
+            dbConnection.closeConnection(connection);
         }
         return Message;
     }
@@ -210,14 +172,13 @@ public class SignUpService implements SignUpInterface {
         dbConnection = new DBConnection();
         try {
             connection = dbConnection.openConnection();
-            statement = connection.createStatement();
+            Statement statement = connection.createStatement();
 
             signIn.setStatus(checkStatus(id));
-            System.out.println(signIn.getStatus());
 
             if (signIn.getStatus() == 0) {
                 signIn.setStatus(1);
-                query = "Update users set status = '" + signIn.getStatus() + "' where userId = '" + id + "'";
+                String query = "Update users set status = '" + signIn.getStatus() + "' where userId = '" + id + "'";
                 statement.execute(query);
                 Message = "Account Activated Successfully!!!! ";
             } else if (signIn.getStatus() == 1) {
@@ -225,18 +186,10 @@ public class SignUpService implements SignUpInterface {
             } else if (signIn.getStatus() == 2) {
                 Message = "Your account is blocked and cannot be activated!!!! ";
             }
-
-
         } catch (SQLException ex) {
             ex.printStackTrace();
         } finally {
-            try {
-                statement.close();
-                resultSet.close();
-                dbConnection.closeConnection(connection);
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
+            dbConnection.closeConnection(connection);
         }
         return Message;
     }
@@ -259,13 +212,7 @@ public class SignUpService implements SignUpInterface {
         } catch (SQLException ex) {
             ex.printStackTrace();
         } finally {
-            try {
-                statement.close();
-                resultSet.close();
-                dbConnection.closeConnection(connection);
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
+            dbConnection.closeConnection(connection);
         }
         return status;
     }

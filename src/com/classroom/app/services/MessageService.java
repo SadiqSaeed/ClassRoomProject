@@ -22,9 +22,8 @@ public class MessageService implements MessageInterface {
     private List<Message> messageList;
 
     @Override
-    public void sendMessage(String message, String author, String chatId) {
+    public void sendMessage(Message messageClass) {
         dbConnection = new DBConnection();
-        messageClass = new Message(message, author, chatId);
         try {
             connection = dbConnection.openConnection();
             statement = connection.createStatement();
@@ -88,7 +87,7 @@ public class MessageService implements MessageInterface {
             resultSet = statement.executeQuery(query);
 
             while (resultSet.next()) {
-                messageClass = new Message();
+                Message messageClass = new Message();
                 messageClass.setMessageID(resultSet.getInt("messageId"));
                 messageClass.setMessage(resultSet.getString("message"));
                 messageClass.setCreatedAt(resultSet.getTimestamp("createdAt"));
@@ -112,7 +111,74 @@ public class MessageService implements MessageInterface {
     }
 
     @Override
-    public List<Message> getMessagePaginated(int start, int size, String chatId) {
-        return null;
+    public List<Message> getMessagePaginated(int start, int size) {
+        dbConnection = new DBConnection();
+        messageList = new ArrayList<>();
+        try {
+            connection = dbConnection.openConnection();
+            statement = connection.createStatement();
+
+            query = "Select * from messages where start = '" + start + "' And size = '" + size + "'";
+
+            resultSet = statement.executeQuery(query);
+
+            while (resultSet.next()) {
+                Message messageClass = new Message();
+                messageClass.setMessageID(resultSet.getInt("messageId"));
+                messageClass.setMessage(resultSet.getString("message"));
+                messageClass.setCreatedAt(resultSet.getTimestamp("createdAt"));
+                messageClass.setAuthor(resultSet.getString("author"));
+                messageClass.setChatId(resultSet.getString("chatId"));
+                messageList.add(messageClass);
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                statement.close();
+                resultSet.close();
+                dbConnection.closeConnection(connection);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return messageList;
+    }
+
+    @Override
+    public List<Message> getMessagesforYear(int year) {
+        dbConnection = new DBConnection();
+        messageList = new ArrayList<>();
+        try {
+            connection = dbConnection.openConnection();
+            statement = connection.createStatement();
+
+            query = "Select * from messages where year = '" + year + "'";
+
+            resultSet = statement.executeQuery(query);
+
+            while (resultSet.next()) {
+                Message messageClass = new Message();
+                messageClass.setMessageID(resultSet.getInt("messageId"));
+                messageClass.setMessage(resultSet.getString("message"));
+                messageClass.setCreatedAt(resultSet.getTimestamp("createdAt"));
+                messageClass.setAuthor(resultSet.getString("author"));
+                messageClass.setChatId(resultSet.getString("chatId"));
+                messageList.add(messageClass);
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                statement.close();
+                resultSet.close();
+                dbConnection.closeConnection(connection);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return messageList;
     }
 }
